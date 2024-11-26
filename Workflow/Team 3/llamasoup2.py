@@ -2,7 +2,7 @@ import ollama
 import pandas as pd
 import time
 
-fileN = 'GlassdoorPull-2024-11-25.csv'
+fileN = input('Enter file name: ')
 
 df = pd.read_csv(fileN)
 #print(df)
