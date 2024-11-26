@@ -1,9 +1,8 @@
 import random
-import time
 
 import pandas as pd
 from selenium import webdriver
-from selenium.common import NoSuchElementException, TimeoutException
+from selenium.common import TimeoutException, StaleElementReferenceException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -26,112 +25,111 @@ user_agents = [
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
     "Mozilla/5.0 (X11; Linux i686; rv:124.0) Gecko/20100101 Firefox/124.0"]
 
+base_url = "https://www.ziprecruiter.com/jobs-search?search="
 
-def scrape_page(driver, job_dict):
-    time.sleep(30)
-    job_cards = driver.find_elements(By.CSS_SELECTOR, "div.job_result_two_pane")
 
-    for job in job_cards:
-        # Find the link inside the <h2> for job title
-        job_link = job.find_element(By.CSS_SELECTOR, "h2.font-bold.text-black.text-header-sm a")
-        job_url = job_link.get_attribute("href")
+def scrape_page(driver, job_dict, url):
+    # Get the current window handle before any click
+    main_window_handle = driver.current_window_handle
 
-        # Save the main window handle
-        main_window = driver.current_window_handle
+    job_cards_selector = '*[class*="job_result_two_pane"]'
+    try:
+        # Locate job cards initially
+        job_cards = driver.find_elements(By.CSS_SELECTOR, job_cards_selector)
+    except Exception as e:
+        print(f"Error locating job cards: {e}")
+        return
 
-        # Open a new window
-        driver.execute_script(f"window.open('{job_url}')")
-
-        # Switch to the new window
-        driver.switch_to.window(driver.window_handles[1])
-
-        # Allow for some general waiting time (e.g., slow down the script)
-        driver.implicitly_wait(15)
-
+    i = 0
+    while i < len(job_cards):
         try:
-            # Wait for the job details to load
-            element = WebDriverWait(driver, 20).until(
-                EC.visibility_of_element_located((By.CLASS_NAME, 'job_details'))
-            )
-            print("Job details element found")
+            # Re-fetch job cards to ensure fresh references
+            job_cards = driver.find_elements(By.CSS_SELECTOR, job_cards_selector)
 
-            # Perform a click on that element to expand the details
-            action = ActionChains(driver)
-            action.move_to_element(element).click().perform()
+            if i >= len(job_cards):
+                print(f"Job card index {i} is out of range. Skipping.")
+                break
 
-            # Wait for the job detail page to load
-            WebDriverWait(driver, 20).until(
-                EC.visibility_of_element_located((By.CSS_SELECTOR, "div.job_details"))
-            )
-        except TimeoutException:
-            print("Timeout while waiting for job details element")
-            driver.close()  # Close the new window
-            driver.switch_to.window(main_window)  # Switch back to the original window
-            continue
+            job = job_cards[i]
 
-        try:
-            print("Job details section loaded")
+            # Scroll into view and click the job card
+            driver.execute_script("arguments[0].scrollIntoView(true);", job)
+            WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, job_cards_selector)))
+            job.click()
 
-            title = driver.find_element(By.CLASS_NAME, "job_title").text
-            print(f"Title: {title}")
+            # Wait until the URL changes
+            WebDriverWait(driver, 10).until(EC.url_changes(url))
 
-            company = driver.find_element(By.CLASS_NAME, "hiring_company").text
-            print(f"Company: {company}")
+            # Navigate back to the original page if it is redirected somewhere else
+            new_url = driver.current_url
+            if base_url not in new_url:
+                print(f"Page has redirected to: {new_url}")
 
-            location = driver.find_element(By.CLASS_NAME, "hiring_location").text
-            print(f"Location: {location}")
+                driver.get(url)
 
-            job_type = driver.find_element(By.CSS_SELECTOR, "span.job_characteristics_data.t_employment_type").text
-            print(f"Job Type: {job_type}")
+            # Extract job details
+            WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "div[data-testid='right-pane']")))
+            job_title = driver.find_element(By.CSS_SELECTOR,
+                                            "h1.font-bold.text-primary.text-header-md.md\:text-header-md-tablet").text
+            job_location = driver.find_element(By.CSS_SELECTOR,
+                                               "div.mb-24 p.text-primary.normal-case.text-body-md").text
+            company_name = driver.find_element(By.CSS_SELECTOR,
+                                               "div.flex.justify-between.items-start a.text-primary").text
 
-            salary = driver.find_element(By.CSS_SELECTOR, "span.job_characteristics_data.t_compensation").text
-            print(f"Salary: {salary}")
+            # Extract salary and job type
+            job_salary = None
+            job_type = None
 
-            time.sleep(15)
+            # Look for the salary range
+            salary_elements = driver.find_elements(By.CSS_SELECTOR,
+                                                   "div.flex.gap-x-12 p.text-primary.normal-case.text-body-md")
+            for elem in salary_elements:
+                text = elem.text.strip()
+                if text.startswith('$'):
+                    job_salary = text
+                elif text.lower() in ['full-time', 'part-time']:
+                    job_type = text
 
-        except NoSuchElementException as e:
-            print(f"Error extracting job details: {e}")
-            driver.close()  # Close the new window
-            driver.switch_to.window(main_window)
-            continue
+            # If both information exists, add them to the job_dict
+            job_dict["title"].append(job_title)
+            job_dict["company_name"].append(company_name)
+            job_dict["job_location"].append(job_location)
+            job_dict["job_salary"].append(job_salary)
+            job_dict["job_type"].append(job_type)
 
-        # Append the extracted details to the job_dict
-        job_dict["title"].append(title)
-        job_dict["job_location"].append(location)
-        job_dict["company_name"].append(company)
-        job_dict["salary"].append(salary)
-        job_dict["job_type"].append(job_type)
-        print("Job details section saved")
+            i += 1  # Increment the index only if the click and extraction were successful
 
-        # Close the new window and switch back to the original window
-        driver.close()  # Close the new window
-        driver.switch_to.window(main_window)  # Switch back to the original window
-
-        # Optionally wait a moment before clicking the next job (to avoid rate limiting)
-        time.sleep(10)
-
-    driver.quit()
+        except StaleElementReferenceException:
+            print(f"Stale reference encountered for job card {i + 1}. Retrying.")
+        except Exception as e:
+            print(f"An unexpected error occurred on job card {i + 1}: {e}")
+            i += 1  # Skip to the next job card if an error occurs
 
 
 def next_page(driver):
     try:
+        # Wait for the "Next Page" button to become clickable
         next_page_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, "a[title='Next Page']"))
         )
-
         next_page_button.click()
+        return True
     except TimeoutException:
-        print("No more pages available or next page did not load.")
+        print("No more pages available.")
         return False
 
 
 def main():
+    url = "https://www.ziprecruiter.com/jobs-search?search=software+engineer&location=Chicago%2C+IL&lvk=JG_74EGAdtycohHKniD2eg.--NacsUqfMF"
+
     # Set up Chrome options
     chrome_options = Options()
     chrome_options.add_experimental_option("detach", True)
     chrome_options.add_argument("start-maximized")
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     chrome_options.add_experimental_option('useAutomationExtension', False)
+
     # run in headless mode
     # chrome_options.add_argument("--headless")
 
@@ -177,31 +175,50 @@ def main():
         "job_location": [],  # Location ( State )
         "company_name": [],  # Company name
         "job_type": [],  # Whether full-time, part-time, intern
+        # "job_description":[],
         # "remote": [],               # Remote, in-person, hybrid
         # "wage": [],                 # $ per hour
-        "salary": [],  # $ per year
+        "job_salary": [],  # $ per year
         # "education": [],            # Undergrad, master, phd
         # "prog_language": [],        # Programming languages
         # "framework": [],            # React, Angular, Django, Flask, etc
         # "others":[]                 # Database, Cloud technologies, etc
     }
 
-    url = "https://www.ziprecruiter.com/jobs-search?search=software+engineer&location=Chicago%2C+IL&lvk=JG_74EGAdtycohHKniD2eg.--NacsUqfMF"
-
-    # Visit target website
+    # Visit the target website
     driver.get(url)
-    element = WebDriverWait(driver, 20).until(
-        EC.visibility_of_element_located((By.CLASS_NAME, 'content')))
 
+    # Wait until the main content element is visible on the page
+    element = WebDriverWait(driver, 20).until(
+        EC.visibility_of_element_located((By.CLASS_NAME, 'content'))
+    )
+
+    # Perform a click action on the main content element
     action = ActionChains(driver)
     action.move_to_element(element).click().perform()
-    scrape_page(driver, job_dict)
 
+    # Initialize a page counter
+    page = 0
+
+    # Main scrape loop
+    while True:
+        scrape_page(driver, job_dict, url)
+        if not next_page(driver):
+            print("No more pages to scrape.")
+            break
+
+        # Update the URL to the current page's URL
+        url = driver.current_url
+        page += 1
+
+    driver.quit()
     df = pd.DataFrame(job_dict)
-    print(df)
-    print(df.describe)
-    print(df.info)
-    print(df.iloc[0])
+    df.to_csv('jobs.csv', index=False)
+
+    if df.empty:
+        print("The DataFrame is empty. No data was collected.")
+    else:
+        print(df.iloc[0])
 
 
 if __name__ == '__main__':
