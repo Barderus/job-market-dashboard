@@ -13,7 +13,7 @@
 * **unique_title:** A unique identifier for each job title, ensuring no duplicates.
 * **title:** The official job title or position name.
 * **job_location:** The physical or primary location of the job, such as city or region.
-* **education:** The educational qualifications required, such as degree or certifications.
+* **education:ollama run llama3.2** The educational qualifications required, such as degree or certifications.
 * **languages:** Programming languages needed for the position.
 * **framework:** Relevant development frameworks or libraries required, e.g., Django, React.
 * **others:** Any additional skills or tools necessary for the job, e.g., Git, DevOps.
