@@ -77,6 +77,9 @@ def scrape_page(driver, job_dict, url):
             company_name = driver.find_element(By.CSS_SELECTOR,
                                                "div.flex.justify-between.items-start a.text-primary").text
 
+            job_details = driver.find_element(By.CSS_SELECTOR,
+                                              "div.text-primary.whitespace-pre-line.break-words").text
+            #print(job_details)
             # Extract salary and job type
             job_salary = None
             job_type = None
@@ -88,7 +91,7 @@ def scrape_page(driver, job_dict, url):
                 text = elem.text.strip()
                 if text.startswith('$'):
                     job_salary = text
-                elif text.lower() in ['full-time', 'part-time']:
+                elif text.lower() in ["full-time", "part-time"]:
                     job_type = text
 
             # If both information exists, add them to the job_dict
@@ -97,6 +100,7 @@ def scrape_page(driver, job_dict, url):
             job_dict["job_location"].append(job_location)
             job_dict["job_salary"].append(job_salary)
             job_dict["job_type"].append(job_type)
+            job_dict["job_description"].append(job_details)
 
             i += 1  # Increment the index only if the click and extraction were successful
 
@@ -121,7 +125,16 @@ def next_page(driver):
 
 
 def main():
-    url = "https://www.ziprecruiter.com/jobs-search?search=software+engineer&location=Chicago%2C+IL&lvk=JG_74EGAdtycohHKniD2eg.--NacsUqfMF"
+    sw_url = "https://www.ziprecruiter.com/jobs-search?search=software+engineer&location=Chicago%2C+IL&lvk=JG_74EGAdtycohHKniD2eg.--NacsUqfMF"
+    ds_url = "https://www.ziprecruiter.com/jobs-search?search=data+scientist&location=Chicago%2C+IL&lvk=DBml3W3I7MdIbFS0oJWb1g.--Nfet94gmo"
+    da_url = "https://www.ziprecruiter.com/jobs-search?search=data+analyst&location=Chicago%2C+IL&lvk=aJd0EasHdgwWMwd02uxqQw.--NfetAEI3k"
+    dvop_url = "https://www.ziprecruiter.com/jobs-search?search=dev+ops&location=Chicago%2C+IL&lvk=8Fn5DTVbgDPdaWpheHFmCQ.--Nfe4Q0T8g"
+    mleng_url = "https://www.ziprecruiter.com/jobs-search?search=machine+learning+engineer&location=Chicago%2C+IL&lvk=MOx4LHDzHjJ-JTykfwkowA.--NfetAqkTB"
+    cloud_url = "https://www.ziprecruiter.com/jobs-search?search=cloud+engineer&location=Chicago%2C+IL&lvk=8Fn5DTVbgDPdaWpheHFmCQ.--Nfe4Q0T8g"
+    web_url = "https://www.ziprecruiter.com/jobs-search?search=web+developer&location=Chicago%2C+IL&lvk=vGvBRpEKvrSltPTb5j8_iQ.--NffGxO2Yg"
+    dteng_url = "https://www.ziprecruiter.com/jobs-search?search=data+engineer&location=Chicago%2C+IL&lvk=3kz6loGNfWcrdiKNC_NEBw.--Nfeszg53B"
+
+    url_list = [sw_url, ds_url, da_url, dvop_url, mleng_url, cloud_url, web_url, dteng_url]
 
     # Set up Chrome options
     chrome_options = Options()
@@ -175,7 +188,7 @@ def main():
         "job_location": [],  # Location ( State )
         "company_name": [],  # Company name
         "job_type": [],  # Whether full-time, part-time, intern
-        # "job_description":[],
+        "job_description":[],
         # "remote": [],               # Remote, in-person, hybrid
         # "wage": [],                 # $ per hour
         "job_salary": [],  # $ per year
@@ -186,34 +199,35 @@ def main():
     }
 
     # Visit the target website
-    driver.get(url)
+    for url in url_list:
+        driver.get(url)
 
-    # Wait until the main content element is visible on the page
-    element = WebDriverWait(driver, 20).until(
-        EC.visibility_of_element_located((By.CLASS_NAME, 'content'))
-    )
+        # Wait until the main content element is visible on the page
+        element = WebDriverWait(driver, 20).until(
+            EC.visibility_of_element_located((By.CLASS_NAME, 'content'))
+        )
 
-    # Perform a click action on the main content element
-    action = ActionChains(driver)
-    action.move_to_element(element).click().perform()
+        # Perform a click action on the main content element
+        action = ActionChains(driver)
+        action.move_to_element(element).click().perform()
 
-    # Initialize a page counter
-    page = 0
+        # Initialize a page counter
+        page = 0
 
-    # Main scrape loop
-    while True:
-        scrape_page(driver, job_dict, url)
-        if not next_page(driver):
-            print("No more pages to scrape.")
-            break
+        # Main scrape loop
+        while True:
+            scrape_page(driver, job_dict, url)
+            if not next_page(driver):
+                print("No more pages to scrape.")
+                break
 
-        # Update the URL to the current page's URL
-        url = driver.current_url
-        page += 1
+            # Update the URL to the current page's URL
+            url = driver.current_url
+            page += 1
 
     driver.quit()
     df = pd.DataFrame(job_dict)
-    df.to_csv('jobs.csv', index=False)
+    df.to_csv('jobs1.csv', index=False)
 
     if df.empty:
         print("The DataFrame is empty. No data was collected.")
