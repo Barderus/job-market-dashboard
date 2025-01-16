@@ -1,3 +1,4 @@
+import os
 import random
 import pandas as pd
 from selenium import webdriver
@@ -162,7 +163,7 @@ def scrape_page(driver: ChromeDriver, job_dict):
 
                 # New methods for searching
                 # field info, courtesty of Mike
-                job_dict["Unique Title"].append("SoftDev")
+                #job_dict["Unique Title"].append("SoftDev")
                 job_dict["Title"].append(wait_for_visible_element(element, By.TAG_NAME, "a").text.strip())
                 job_dict["Job Location"].append(wait_for_visible_element(element, By.CLASS_NAME, "css-1t92pv").text.strip())
                 job_dict["Company Name"].append(wait_for_visible_element(element, By.CSS_SELECTOR, 'span[data-testid="companyName"]').text.strip())
@@ -246,6 +247,9 @@ def wait_for_next_page(driver: ChromeDriver, current_page: int) -> int:
 # It is assumed that any salary which
 # includes both a 'K' and a '.' only
 # goes one decimal place to the right.
+
+# Removed parse_salary_info since there is no need for this calculation. It might lead to false salaries.
+"""
 def parse_salary_info(listings: list):
     salary_min_max = {
         "Salary Minimum": [],
@@ -307,6 +311,7 @@ def parse_salary_info(listings: list):
             salary_min_max["Salary Maximum"].append(0.0)
     
     return pd.DataFrame(salary_min_max)
+"""
 
 def main():
     # How many pages to search
@@ -314,7 +319,7 @@ def main():
 
     # Establishing our dictionary of job listing data
     job_dict = {
-        "Unique Title": [],         # Unique job title
+        #"Unique Title": [],         # Unique job title
         "Title": [],                # Title of the job
         "Job Location": [],         # Location ( State )
         "Company Name": [],         # Company name
@@ -375,31 +380,55 @@ def main():
     )
 
     # The URL to visit
-    url = "https://www.simplyhired.com/search?q=software+developer&l=Chicago%2C+IL"
+    sw_url = "https://www.simplyhired.com/search?q=software+developer&l=Chicago%2C+IL"
+    da_url = "https://www.simplyhired.com/search?q=data+analyst&l=Chicago%2C+IL"
+    ds_url = "https://www.simplyhired.com/search?q=data+science&l=Chicago%2C+IL"
+    dteng_url = "https://www.simplyhired.com/search?q=data+engineer&l=Chicago%2C+IL"
+    cloud_url = "https://www.simplyhired.com/search?q=cloud+computing&l=Chicago%2C+IL"
+    dvop_url = "https://www.simplyhired.com/search?q=devops&l=Chicago%2C+IL"
+    mleng_url = "https://www.simplyhired.com/search?q=machine+learning+engineer&l=Chicago%2C+IL"
+    web_url = "https://www.simplyhired.com/search?q=web+developer&l=Chicago%2C+IL"
+
+    url_list = [sw_url, ds_url, da_url, dvop_url, mleng_url, cloud_url, web_url, dteng_url]
 
     # Visiting target website
-    driver.get(url)
+    for url in url_list:
+        driver.get(url)
 
-    # Our action loop!
-    # Runs the functions defined
-    # throughout this document
-    # to scrape the specified
-    # website (SimplyHired).
-    current_page = 1
-    while current_page <= pages_to_search:
-        scrape_page(driver, job_dict)
-        next_page(driver)
-        current_page = wait_for_next_page(driver, current_page)
+        # Our action loop!
+        # Runs the functions defined
+        # throughout this document
+        # to scrape the specified
+        # website (SimplyHired).
+        current_page = 1
+        while current_page <= pages_to_search:
+            # Scrape data from the current page
+            scrape_page(driver, job_dict)
 
-    # Printing our dataframes containing
-    # the data from the scraped pages
-    listings_frame = pd.DataFrame(job_dict)
-    salary_frame = parse_salary_info(job_dict["Salary"])
-    salary_frame["Salary Minimum"] = pd.to_numeric(salary_frame["Salary Minimum"], downcast="float", errors="coerce")
-    salary_frame["Salary Maximum"] = pd.to_numeric(salary_frame["Salary Maximum"], downcast="float", errors="coerce")
+            # Create a DataFrame for the current page's data
+            listings_frame = pd.DataFrame(job_dict)
 
-    listings_sortable_frame = pd.concat([listings_frame, salary_frame], axis=1)
-    print(listings_sortable_frame.sort_values(by=["Salary Minimum"], ascending=False))
+            # Append the data to the CSV file
+            file_name = "../../Data Cleaning/simply_hired.csv"
+            if not os.path.isfile(file_name):
+                # If the file doesn't exist, write with header
+                listings_frame.to_csv(file_name, index=False)
+            else:
+                # If the file exists, append without header
+                listings_frame.to_csv(file_name, mode='a', header=False, index=False)
+
+            # Go to the next page
+            next_page(driver)
+
+            # Update the current page
+            current_page = wait_for_next_page(driver, current_page)
+
+    #salary_frame = parse_salary_info(job_dict["Salary"])
+    #salary_frame["Salary Minimum"] = pd.to_numeric(salary_frame["Salary Minimum"], downcast="float", errors="coerce")
+    #salary_frame["Salary Maximum"] = pd.to_numeric(salary_frame["Salary Maximum"], downcast="float", errors="coerce")
+
+    #listings_sortable_frame = pd.concat([listings_frame, salary_frame], axis=1)
+    #print(listings_sortable_frame.sort_values(by=["Salary Minimum"], ascending=False))
 
 
 if __name__ == '__main__':
