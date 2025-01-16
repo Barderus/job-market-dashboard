@@ -1,0 +1,751 @@
+Unique Title,Title,Job Location,Company Name,Job Type,Salary
+SoftDev,C++ Software Engineer,"Chicago, IL","SG Cap Trading, LLC.",Full-time,Estimated: $81.9K - $104K a year
+SoftDev,Database Developer,"Chicago, IL",Medical Home Network,Full-time,"$87,000 - $115,000 a year"
+SoftDev,Staff Software Engineer - Platform Enginering,"Oak Brook, IL",The Chamberlain Group LLC,Full-time,"$97,700 - $184,175 a year"
+SoftDev,DevOps Lead,"Chicago, IL",Infosys,unknown,Estimated: $81.2K - $103K a year
+SoftDev,SAP Programmer,"Melrose Park, IL",Harry and David,Full-time,"From $100,000 a year"
+SoftDev,Principal Cloud Engineer,Illinois,BMO US,Part-time,"$110,000 - $204,100 a year"
+SoftDev,2025009 Staff Software Engineer,"Chicago, IL",John Deere,unknown,"$148,949 - $158,949 a year"
+SoftDev,C++ and C# Software Developer,"Hines, IL",Leidos,Full-time,"$85,150 - $153,925 a year"
+SoftDev,Staff Software Engineer - Big Data (T25),"Chicago, IL",Braintree,Full-time,"$84,500 - $204,600 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Lenovo,Full-time,Estimated: $129K - $163K a year
+SoftDev,UI Developer,"Oakbrook Ter, IL",Steneral Consulting,unknown,$55 - $60 an hour
+SoftDev,Software Engineer,"Chicago, IL",WALGREENS,unknown,"$98,600 - $157,500 a year"
+SoftDev,Imaging Software Engineer,"Chicago, IL",Lenovo,Full-time,"$100,000 - $150,000 a year"
+SoftDev,Software Engineer in Test (Desktop),"Chicago, IL",NinjaTrader,unknown,"$100,000 - $125,000 a year"
+SoftDev,Lead Software Engineer,"Chicago, IL","WithMe, Inc.",Full-time,"$200,000 - $220,000 a year"
+SoftDev,Staff Software Engineer - Web SDK,"Chicago, IL",PayPal,Full-time,"$84,500 - $204,600 a year"
+SoftDev,RPA Application Developer (UiPath) - Chicago/ Texas,"Chicago, IL",RV Soft,Contract,$55 - $58 an hour
+SoftDev,"Staff Software Engineer (Trading Platform, Scala)","Chicago, IL",NinjaTrader,unknown,"$175,000 - $205,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",DRW,unknown,"$150,000 - $225,000 a year"
+SoftDev,iOS Mobile App Developer,"Chicago, IL",RITAM SOFT LLC,Contract,$60 an hour
+SoftDev,Remote Automation Solutions Engineer (Territory Supporting Central US),"Chicago, IL",Flow Control Group,Full-time,"$100,000 - $110,000 a year"
+SoftDev,Lead Cloud Engineer (RapidScale),United States,Cox Communications,Full-time,"$119,600 - $199,400 a year"
+SoftDev,Software Engineer II,"Chicago, IL",CME Group,Full-time,"$84,800 - $141,300 a year"
+SoftDev,Software Developer - HighJump/Korber,"Chicago, IL",Costco Wholesale,unknown,"$125,000 - $160,000 a year"
+SoftDev,"Software Engineer II, Edge Workflows","Chicago, IL",Tempus,unknown,"$85,000 - $130,000 a year"
+SoftDev,"Senior Software Engineer I (Web, Frontend)","Chicago, IL",NinjaTrader,unknown,"$135,000 - $165,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",FleetPulse,Full-time,"$100,000 - $130,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",Kernel Trading Technologies LP,Full-time,"$100,181.06 - $264,897.98 a year"
+SoftDev,ADAS Software Engineer,"Chicago, IL",Teoresi Group,Full-time,"$105,341 - $114,017 a year"
+SoftDev,Sr. Software Engineer - Big Data (T24),"Chicago, IL",Braintree,Full-time,"$72,700 - $176,000 a year"
+SoftDev,"Engineer, Software - Unity Developer","Chicago, IL","Arrow International, Inc.",Full-time,unknown
+SoftDev,Senior Software Developer,"Chicago, IL","Sunrise Futures, LLC",unknown,Estimated: $122K - $155K a year
+SoftDev,"PRODUCT ENGINEER, FRONT END","Chicago, IL","Hyatt Corporate Office, Chicago",Full-time,"$84,700 - $120,000 a year"
+SoftDev,Senior Software Engineer,"Chicago, IL",Tempus,unknown,"$110,000 - $160,000 a year"
+SoftDev,Software Developer,"Chicago, IL",Quinnox,unknown,Estimated: $99.6K - $126K a year
+SoftDev,Backend C# Developer / Blazor / Angular CONSULTANT,"Chicago, IL",Intone Networks,Contract,Estimated: $108K - $137K a year
+SoftDev,Full Stack Java Developer,"Chicago, IL",Seven Seven Global Services Inc,Full-time,$60 - $70 an hour
+SoftDev,Lead UI Developer,"Chicago, IL",Amazee Global Ventures Inc,Full-time | Contract,$55 - $60 an hour
+SoftDev,C++ Developer (Locals Only),"Chicago, IL",Realign LLC,Contract,Estimated: $87.1K - $110K a year
+SoftDev,Analytics Engineer,"Chicago, IL",GEICO,Full-time,unknown
+SoftDev,C++ Software Engineer,"Chicago, IL","SG Cap Trading, LLC.",Full-time,Estimated: $81.9K - $104K a year
+SoftDev,Database Developer,"Chicago, IL",Medical Home Network,Full-time,"$87,000 - $115,000 a year"
+SoftDev,Staff Software Engineer - Platform Enginering,"Oak Brook, IL",The Chamberlain Group LLC,Full-time,"$97,700 - $184,175 a year"
+SoftDev,2025009 Staff Software Engineer,"Chicago, IL",John Deere,unknown,"$148,949 - $158,949 a year"
+SoftDev,C++ and C# Software Developer,"Hines, IL",Leidos,Full-time,"$85,150 - $153,925 a year"
+SoftDev,Staff Software Engineer - Big Data (T25),"Chicago, IL",Braintree,Full-time,"$84,500 - $204,600 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Lenovo,Full-time,Estimated: $129K - $163K a year
+SoftDev,UI Developer,"Oakbrook Ter, IL",Steneral Consulting,unknown,$55 - $60 an hour
+SoftDev,Software Engineer in Test (Desktop),"Chicago, IL",NinjaTrader,unknown,"$100,000 - $125,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",WALGREENS,unknown,"$98,600 - $157,500 a year"
+SoftDev,Imaging Software Engineer,"Chicago, IL",Lenovo,Full-time,"$100,000 - $150,000 a year"
+SoftDev,Lead Software Engineer,"Chicago, IL","WithMe, Inc.",Full-time,"$200,000 - $220,000 a year"
+SoftDev,Staff Software Engineer - Web SDK,"Chicago, IL",PayPal,Full-time,"$84,500 - $204,600 a year"
+SoftDev,RPA Application Developer (UiPath) - Chicago/ Texas,"Chicago, IL",RV Soft,Contract,$55 - $58 an hour
+SoftDev,"Staff Software Engineer (Trading Platform, Scala)","Chicago, IL",NinjaTrader,unknown,"$175,000 - $205,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",DRW,unknown,"$150,000 - $225,000 a year"
+SoftDev,iOS Mobile App Developer,"Chicago, IL",RITAM SOFT LLC,Contract,$60 an hour
+SoftDev,Software Engineer,"Chicago, IL",Kernel Trading Technologies LP,Full-time,"$100,181.06 - $264,897.98 a year"
+SoftDev,Sr. Software Engineer - Big Data (T24),"Chicago, IL",Braintree,Full-time,"$72,700 - $176,000 a year"
+SoftDev,Software Engineer II,"Chicago, IL",CME Group,Full-time,"$84,800 - $141,300 a year"
+SoftDev,C++ Software Engineer,"Chicago, IL","SG Cap Trading, LLC.",Full-time,Estimated: $81.9K - $104K a year
+SoftDev,Database Developer,"Chicago, IL",Medical Home Network,Full-time,"$87,000 - $115,000 a year"
+SoftDev,Staff Software Engineer - Platform Enginering,"Oak Brook, IL",The Chamberlain Group LLC,Full-time,"$97,700 - $184,175 a year"
+SoftDev,2025009 Staff Software Engineer,"Chicago, IL",John Deere,unknown,"$148,949 - $158,949 a year"
+SoftDev,C++ and C# Software Developer,"Hines, IL",Leidos,Full-time,"$85,150 - $153,925 a year"
+SoftDev,Staff Software Engineer - Big Data (T25),"Chicago, IL",Braintree,Full-time,"$84,500 - $204,600 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Lenovo,Full-time,Estimated: $129K - $163K a year
+SoftDev,UI Developer,"Oakbrook Ter, IL",Steneral Consulting,unknown,$55 - $60 an hour
+SoftDev,Software Engineer in Test (Desktop),"Chicago, IL",NinjaTrader,unknown,"$100,000 - $125,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",WALGREENS,unknown,"$98,600 - $157,500 a year"
+SoftDev,Imaging Software Engineer,"Chicago, IL",Lenovo,Full-time,"$100,000 - $150,000 a year"
+SoftDev,Lead Software Engineer,"Chicago, IL","WithMe, Inc.",Full-time,"$200,000 - $220,000 a year"
+SoftDev,Staff Software Engineer - Web SDK,"Chicago, IL",PayPal,Full-time,"$84,500 - $204,600 a year"
+SoftDev,RPA Application Developer (UiPath) - Chicago/ Texas,"Chicago, IL",RV Soft,Contract,$55 - $58 an hour
+SoftDev,"Staff Software Engineer (Trading Platform, Scala)","Chicago, IL",NinjaTrader,unknown,"$175,000 - $205,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",DRW,unknown,"$150,000 - $225,000 a year"
+SoftDev,iOS Mobile App Developer,"Chicago, IL",RITAM SOFT LLC,Contract,$60 an hour
+SoftDev,Software Engineer,"Chicago, IL",Kernel Trading Technologies LP,Full-time,"$100,181.06 - $264,897.98 a year"
+SoftDev,Sr. Software Engineer - Big Data (T24),"Chicago, IL",Braintree,Full-time,"$72,700 - $176,000 a year"
+SoftDev,Software Engineer II,"Chicago, IL",CME Group,Full-time,"$84,800 - $141,300 a year"
+SoftDev,Software Engineering Manager,"Skokie, IL",Motion Recruitment,Full-time,"$150,000 - $180,000 a year"
+SoftDev,Software Developer - HighJump/Korber,"Chicago, IL",Costco Wholesale,unknown,"$125,000 - $160,000 a year"
+SoftDev,"Software Engineer II, Edge Workflows","Chicago, IL",Tempus,unknown,"$85,000 - $130,000 a year"
+SoftDev,"Senior Software Engineer I (Web, Frontend)","Chicago, IL",NinjaTrader,unknown,"$135,000 - $165,000 a year"
+SoftDev,"Engineer, Software - Unity Developer","Chicago, IL","Arrow International, Inc.",Full-time,unknown
+SoftDev,Software Engineer,"Chicago, IL",FleetPulse,Full-time,"$100,000 - $130,000 a year"
+SoftDev,Senior Software Developer,"Chicago, IL","Sunrise Futures, LLC",unknown,Estimated: $122K - $155K a year
+SoftDev,Senior Software Engineer,"Chicago, IL",Tempus,unknown,"$110,000 - $160,000 a year"
+SoftDev,ADAS Software Engineer,"Chicago, IL",Teoresi Group,Full-time,"$105,341 - $114,017 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Fortinet,Full-time,"$130,000 - $185,000 a year"
+SoftDev,Full Stack Java Developer,"Chicago, IL",Seven Seven Global Services Inc,Full-time,$60 - $70 an hour
+SoftDev,Engineer - Software Test,"Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,C++ Developer (Locals Only),"Chicago, IL",Realign LLC,Contract,Estimated: $87.1K - $110K a year
+SoftDev,"Software Engineer, Test - Flexible Hybrid in Chicago, IL","Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,Java Engineer,"Chicago, IL",Chicago Trading Company (CTC),unknown,"$145,000 - $225,000 a year"
+SoftDev,"PRODUCT ENGINEER, FRONT END","Chicago, IL","Hyatt Corporate Office, Chicago",Full-time,"$84,700 - $120,000 a year"
+SoftDev,C++ Software Engineer,"Chicago, IL",CTC Lateral - Website & LinkedIn,unknown,"$145,000 - $225,000 a year"
+SoftDev,Software Engineer - Test Automation,"Chicago, IL",iManage,Full-time,"$88,000 - $134,000 a year"
+SoftDev,Backend C# Developer / Blazor / Angular CONSULTANT,"Chicago, IL",Intone Networks,Contract,Estimated: $108K - $137K a year
+SoftDev,Software Developer,"Chicago, IL",Quinnox,unknown,Estimated: $99.6K - $126K a year
+SoftDev,C++ Software Engineer,"Chicago, IL","SG Cap Trading, LLC.",Full-time,Estimated: $81.9K - $104K a year
+SoftDev,Database Developer,"Chicago, IL",Medical Home Network,Full-time,"$87,000 - $115,000 a year"
+SoftDev,Staff Software Engineer - Platform Enginering,"Oak Brook, IL",The Chamberlain Group LLC,Full-time,"$97,700 - $184,175 a year"
+SoftDev,2025009 Staff Software Engineer,"Chicago, IL",John Deere,unknown,"$148,949 - $158,949 a year"
+SoftDev,C++ and C# Software Developer,"Hines, IL",Leidos,Full-time,"$85,150 - $153,925 a year"
+SoftDev,Staff Software Engineer - Big Data (T25),"Chicago, IL",Braintree,Full-time,"$84,500 - $204,600 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Lenovo,Full-time,Estimated: $129K - $163K a year
+SoftDev,UI Developer,"Oakbrook Ter, IL",Steneral Consulting,unknown,$55 - $60 an hour
+SoftDev,Software Engineer in Test (Desktop),"Chicago, IL",NinjaTrader,unknown,"$100,000 - $125,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",WALGREENS,unknown,"$98,600 - $157,500 a year"
+SoftDev,Imaging Software Engineer,"Chicago, IL",Lenovo,Full-time,"$100,000 - $150,000 a year"
+SoftDev,Lead Software Engineer,"Chicago, IL","WithMe, Inc.",Full-time,"$200,000 - $220,000 a year"
+SoftDev,Staff Software Engineer - Web SDK,"Chicago, IL",PayPal,Full-time,"$84,500 - $204,600 a year"
+SoftDev,RPA Application Developer (UiPath) - Chicago/ Texas,"Chicago, IL",RV Soft,Contract,$55 - $58 an hour
+SoftDev,"Staff Software Engineer (Trading Platform, Scala)","Chicago, IL",NinjaTrader,unknown,"$175,000 - $205,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",DRW,unknown,"$150,000 - $225,000 a year"
+SoftDev,iOS Mobile App Developer,"Chicago, IL",RITAM SOFT LLC,Contract,$60 an hour
+SoftDev,Software Engineer,"Chicago, IL",Kernel Trading Technologies LP,Full-time,"$100,181.06 - $264,897.98 a year"
+SoftDev,Sr. Software Engineer - Big Data (T24),"Chicago, IL",Braintree,Full-time,"$72,700 - $176,000 a year"
+SoftDev,Software Engineer II,"Chicago, IL",CME Group,Full-time,"$84,800 - $141,300 a year"
+SoftDev,Software Engineering Manager,"Skokie, IL",Motion Recruitment,Full-time,"$150,000 - $180,000 a year"
+SoftDev,Software Developer - HighJump/Korber,"Chicago, IL",Costco Wholesale,unknown,"$125,000 - $160,000 a year"
+SoftDev,"Software Engineer II, Edge Workflows","Chicago, IL",Tempus,unknown,"$85,000 - $130,000 a year"
+SoftDev,"Senior Software Engineer I (Web, Frontend)","Chicago, IL",NinjaTrader,unknown,"$135,000 - $165,000 a year"
+SoftDev,"Engineer, Software - Unity Developer","Chicago, IL","Arrow International, Inc.",Full-time,unknown
+SoftDev,Software Engineer,"Chicago, IL",FleetPulse,Full-time,"$100,000 - $130,000 a year"
+SoftDev,Senior Software Developer,"Chicago, IL","Sunrise Futures, LLC",unknown,Estimated: $122K - $155K a year
+SoftDev,Senior Software Engineer,"Chicago, IL",Tempus,unknown,"$110,000 - $160,000 a year"
+SoftDev,ADAS Software Engineer,"Chicago, IL",Teoresi Group,Full-time,"$105,341 - $114,017 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Fortinet,Full-time,"$130,000 - $185,000 a year"
+SoftDev,Full Stack Java Developer,"Chicago, IL",Seven Seven Global Services Inc,Full-time,$60 - $70 an hour
+SoftDev,Engineer - Software Test,"Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,C++ Developer (Locals Only),"Chicago, IL",Realign LLC,Contract,Estimated: $87.1K - $110K a year
+SoftDev,"Software Engineer, Test - Flexible Hybrid in Chicago, IL","Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,Java Engineer,"Chicago, IL",Chicago Trading Company (CTC),unknown,"$145,000 - $225,000 a year"
+SoftDev,"PRODUCT ENGINEER, FRONT END","Chicago, IL","Hyatt Corporate Office, Chicago",Full-time,"$84,700 - $120,000 a year"
+SoftDev,C++ Software Engineer,"Chicago, IL",CTC Lateral - Website & LinkedIn,unknown,"$145,000 - $225,000 a year"
+SoftDev,Software Engineer - Test Automation,"Chicago, IL",iManage,Full-time,"$88,000 - $134,000 a year"
+SoftDev,Backend C# Developer / Blazor / Angular CONSULTANT,"Chicago, IL",Intone Networks,Contract,Estimated: $108K - $137K a year
+SoftDev,Software Developer,"Chicago, IL",Quinnox,unknown,Estimated: $99.6K - $126K a year
+SoftDev,FBI Special Agent: Data Science & Intelligence Expertise,United States,Federal Bureau of Investigation,Full-time,"$97,300 - $125,543 a year"
+SoftDev,Visiting Discharge Data Lead-OSI (hybrid),"Chicago, IL",University of Illinois - Chicago,Full-time,"$90,000 - $105,000 a year"
+SoftDev,"Technical Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,"$96,900 a year"
+SoftDev,Remote Coding Expertise for AI Training (Norwegian) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Coding Expertise for AI Training (Austrian German) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Coding Expertise for AI Training (Thai) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$16 - $33 an hour
+SoftDev,Pharmaceutical Statistical Quality Analyst,"Melrose Park, IL",Fresenius Kabi,Full-time,"$61,000 - $85,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (Swedish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Remote Coding Expertise for AI Training (Dutch) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Category Management Analyst II,"Oak Brook, IL",Ace Hardware Corporation,Full-time,"$74,000 - $93,600 a year"
+SoftDev,Staff Data Engineer ( Chicago or Boston ),"Chicago, IL",Press Ganey,Full-time,"$140,000 - $160,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (French) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,"Engineer, Machine Learning (AI)","Chicago, IL",Lenovo,Full-time,"$80,000 - $90,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (Finnish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Data Scientist,"Chicago, IL",PayPal,Full-time,"$72,700 - $176,000 a year"
+SoftDev,"Lead, Data Engineer","Chicago, IL",Northern Trust Corp.,Full-time,"$90,820 - $154,280 a year"
+SoftDev,AI Specialist (Chicago/IL),"Chicago, IL",Programmers - Beyond IT,unknown,Estimated: $98K - $124K a year
+SoftDev,Coding Expertise for AI Training (Italian) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Senior Data Engineer,"Chicago, IL",Adtalem Global Education,Full-time,"$84,835.61 - $149,076.17 a year"
+SoftDev,Remote Coding Expertise for AI Training (Danish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,C++ Software Engineer,"Chicago, IL","SG Cap Trading, LLC.",Full-time,Estimated: $81.9K - $104K a year
+SoftDev,Database Developer,"Chicago, IL",Medical Home Network,Full-time,"$87,000 - $115,000 a year"
+SoftDev,Staff Software Engineer - Platform Enginering,"Oak Brook, IL",The Chamberlain Group LLC,Full-time,"$97,700 - $184,175 a year"
+SoftDev,2025009 Staff Software Engineer,"Chicago, IL",John Deere,unknown,"$148,949 - $158,949 a year"
+SoftDev,C++ and C# Software Developer,"Hines, IL",Leidos,Full-time,"$85,150 - $153,925 a year"
+SoftDev,Staff Software Engineer - Big Data (T25),"Chicago, IL",Braintree,Full-time,"$84,500 - $204,600 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Lenovo,Full-time,Estimated: $129K - $163K a year
+SoftDev,UI Developer,"Oakbrook Ter, IL",Steneral Consulting,unknown,$55 - $60 an hour
+SoftDev,Software Engineer in Test (Desktop),"Chicago, IL",NinjaTrader,unknown,"$100,000 - $125,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",WALGREENS,unknown,"$98,600 - $157,500 a year"
+SoftDev,Imaging Software Engineer,"Chicago, IL",Lenovo,Full-time,"$100,000 - $150,000 a year"
+SoftDev,Lead Software Engineer,"Chicago, IL","WithMe, Inc.",Full-time,"$200,000 - $220,000 a year"
+SoftDev,Staff Software Engineer - Web SDK,"Chicago, IL",PayPal,Full-time,"$84,500 - $204,600 a year"
+SoftDev,RPA Application Developer (UiPath) - Chicago/ Texas,"Chicago, IL",RV Soft,Contract,$55 - $58 an hour
+SoftDev,"Staff Software Engineer (Trading Platform, Scala)","Chicago, IL",NinjaTrader,unknown,"$175,000 - $205,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",DRW,unknown,"$150,000 - $225,000 a year"
+SoftDev,iOS Mobile App Developer,"Chicago, IL",RITAM SOFT LLC,Contract,$60 an hour
+SoftDev,Software Engineer,"Chicago, IL",Kernel Trading Technologies LP,Full-time,"$100,181.06 - $264,897.98 a year"
+SoftDev,Sr. Software Engineer - Big Data (T24),"Chicago, IL",Braintree,Full-time,"$72,700 - $176,000 a year"
+SoftDev,Software Engineer II,"Chicago, IL",CME Group,Full-time,"$84,800 - $141,300 a year"
+SoftDev,Software Engineering Manager,"Skokie, IL",Motion Recruitment,Full-time,"$150,000 - $180,000 a year"
+SoftDev,Software Developer - HighJump/Korber,"Chicago, IL",Costco Wholesale,unknown,"$125,000 - $160,000 a year"
+SoftDev,"Software Engineer II, Edge Workflows","Chicago, IL",Tempus,unknown,"$85,000 - $130,000 a year"
+SoftDev,"Senior Software Engineer I (Web, Frontend)","Chicago, IL",NinjaTrader,unknown,"$135,000 - $165,000 a year"
+SoftDev,"Engineer, Software - Unity Developer","Chicago, IL","Arrow International, Inc.",Full-time,unknown
+SoftDev,Software Engineer,"Chicago, IL",FleetPulse,Full-time,"$100,000 - $130,000 a year"
+SoftDev,Senior Software Developer,"Chicago, IL","Sunrise Futures, LLC",unknown,Estimated: $122K - $155K a year
+SoftDev,Senior Software Engineer,"Chicago, IL",Tempus,unknown,"$110,000 - $160,000 a year"
+SoftDev,ADAS Software Engineer,"Chicago, IL",Teoresi Group,Full-time,"$105,341 - $114,017 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Fortinet,Full-time,"$130,000 - $185,000 a year"
+SoftDev,Full Stack Java Developer,"Chicago, IL",Seven Seven Global Services Inc,Full-time,$60 - $70 an hour
+SoftDev,Engineer - Software Test,"Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,C++ Developer (Locals Only),"Chicago, IL",Realign LLC,Contract,Estimated: $87.1K - $110K a year
+SoftDev,"Software Engineer, Test - Flexible Hybrid in Chicago, IL","Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,Java Engineer,"Chicago, IL",Chicago Trading Company (CTC),unknown,"$145,000 - $225,000 a year"
+SoftDev,"PRODUCT ENGINEER, FRONT END","Chicago, IL","Hyatt Corporate Office, Chicago",Full-time,"$84,700 - $120,000 a year"
+SoftDev,C++ Software Engineer,"Chicago, IL",CTC Lateral - Website & LinkedIn,unknown,"$145,000 - $225,000 a year"
+SoftDev,Software Engineer - Test Automation,"Chicago, IL",iManage,Full-time,"$88,000 - $134,000 a year"
+SoftDev,Backend C# Developer / Blazor / Angular CONSULTANT,"Chicago, IL",Intone Networks,Contract,Estimated: $108K - $137K a year
+SoftDev,Software Developer,"Chicago, IL",Quinnox,unknown,Estimated: $99.6K - $126K a year
+SoftDev,FBI Special Agent: Data Science & Intelligence Expertise,United States,Federal Bureau of Investigation,Full-time,"$97,300 - $125,543 a year"
+SoftDev,Visiting Discharge Data Lead-OSI (hybrid),"Chicago, IL",University of Illinois - Chicago,Full-time,"$90,000 - $105,000 a year"
+SoftDev,"Technical Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,"$96,900 a year"
+SoftDev,Remote Coding Expertise for AI Training (Norwegian) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Coding Expertise for AI Training (Austrian German) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Coding Expertise for AI Training (Thai) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$16 - $33 an hour
+SoftDev,Pharmaceutical Statistical Quality Analyst,"Melrose Park, IL",Fresenius Kabi,Full-time,"$61,000 - $85,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (Swedish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Remote Coding Expertise for AI Training (Dutch) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Category Management Analyst II,"Oak Brook, IL",Ace Hardware Corporation,Full-time,"$74,000 - $93,600 a year"
+SoftDev,Staff Data Engineer ( Chicago or Boston ),"Chicago, IL",Press Ganey,Full-time,"$140,000 - $160,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (French) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,"Engineer, Machine Learning (AI)","Chicago, IL",Lenovo,Full-time,"$80,000 - $90,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (Finnish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Data Scientist,"Chicago, IL",PayPal,Full-time,"$72,700 - $176,000 a year"
+SoftDev,"Lead, Data Engineer","Chicago, IL",Northern Trust Corp.,Full-time,"$90,820 - $154,280 a year"
+SoftDev,AI Specialist (Chicago/IL),"Chicago, IL",Programmers - Beyond IT,unknown,Estimated: $98K - $124K a year
+SoftDev,Coding Expertise for AI Training (Italian) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Senior Data Engineer,"Chicago, IL",Adtalem Global Education,Full-time,"$84,835.61 - $149,076.17 a year"
+SoftDev,Remote Coding Expertise for AI Training (Danish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Remote Coding Expertise for AI Training (Malay) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$16 - $33 an hour
+SoftDev,Pharmaceutical Field Sales Representative,"Chicago, IL",Inizio Engage,Full-time,Estimated: $62K - $78.4K a year
+SoftDev,Azure AI Infrastructure Specialist,United States,Peraton,Full-time,"$104,000 - $166,000 a year"
+SoftDev,Coding Expertise for AI Training (Simplified Chinese) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Teacher of Mathematics - AI Trainer,"Chicago, IL",DataAnnotation,Part-time | Full-time,From $40 an hour
+SoftDev,"VP, Marketing Analytics","Rosemont, IL",Wintrust Financial,Full-time,"$117,000 - $158,000 a year"
+SoftDev,"Sr. Analyst, Retail Data","Chicago, IL",Cresco Labs,Full-time,"$74,000 - $100,000 a year"
+SoftDev,"Machine Learning Summer Associate, Digital Pathology","Chicago, IL",Tempus,Seasonal | Internship,$35 an hour
+SoftDev,Visiting Discharge Data Lead-OSI (hybrid),"Chicago, IL",University of Illinois,unknown,"$90,000 - $105,000 a year"
+SoftDev,Data Visualization Designer,"Chicago, IL",Press Ganey,Full-time,"$80,000 - $95,000 a year"
+SoftDev,Math Tutor (Advanced Skills),"Chicago, IL",Huntington Learning Center - Lincoln Park,Part-time,$19 an hour
+SoftDev,People Insights Analyst [PIA],"Chicago, IL",SPINS,unknown,"$70,000 - $80,000 a year"
+SoftDev,2025 AARC Senior Data Science Analyst,"Chicago, IL",Discover Financial Services,unknown,"$103,000 a year"
+SoftDev,Senior HR Data and Analytics Consultant (People Insights),"Chicago, IL",Northern Trust Corp.,Full-time,"$95,600 - $162,400 a year"
+SoftDev,Research Analyst,"Chicago, IL",The University of Chicago,Full-time,"$66,300 - $85,800 a year"
+SoftDev,Staff Data Scientist,"Chicago, IL",Kraft Heinz Company,Full-time,"$115,000 - $143,700 a year"
+SoftDev,Data Scientist II,"Chicago, IL",Press Ganey,Full-time,"$80,000 - $90,000 a year"
+SoftDev,"Asset & Wealth Management, Client Solutions Group (CSG), Distribution Data, Analytics, and Insights - Data Science, Associate - Chicago","Chicago, IL",Goldman Sachs,Part-time | Full-time,"$80,000 - $100,000 a year"
+SoftDev,"Machine Learning Summer Associate, Cell Imaging","Chicago, IL",Tempus,Seasonal | Internship,$35 an hour
+SoftDev,Senior Data Analyst,"Chicago, IL",Chicago Public Schools,Permanent | Full-time,"$76,000 - $100,500 a year"
+SoftDev,C++ Software Engineer,"Chicago, IL","SG Cap Trading, LLC.",Full-time,Estimated: $81.9K - $104K a year
+SoftDev,Database Developer,"Chicago, IL",Medical Home Network,Full-time,"$87,000 - $115,000 a year"
+SoftDev,Staff Software Engineer - Platform Enginering,"Oak Brook, IL",The Chamberlain Group LLC,Full-time,"$97,700 - $184,175 a year"
+SoftDev,2025009 Staff Software Engineer,"Chicago, IL",John Deere,unknown,"$148,949 - $158,949 a year"
+SoftDev,C++ and C# Software Developer,"Hines, IL",Leidos,Full-time,"$85,150 - $153,925 a year"
+SoftDev,Staff Software Engineer - Big Data (T25),"Chicago, IL",Braintree,Full-time,"$84,500 - $204,600 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Lenovo,Full-time,Estimated: $129K - $163K a year
+SoftDev,UI Developer,"Oakbrook Ter, IL",Steneral Consulting,unknown,$55 - $60 an hour
+SoftDev,Software Engineer in Test (Desktop),"Chicago, IL",NinjaTrader,unknown,"$100,000 - $125,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",WALGREENS,unknown,"$98,600 - $157,500 a year"
+SoftDev,Imaging Software Engineer,"Chicago, IL",Lenovo,Full-time,"$100,000 - $150,000 a year"
+SoftDev,Lead Software Engineer,"Chicago, IL","WithMe, Inc.",Full-time,"$200,000 - $220,000 a year"
+SoftDev,Staff Software Engineer - Web SDK,"Chicago, IL",PayPal,Full-time,"$84,500 - $204,600 a year"
+SoftDev,RPA Application Developer (UiPath) - Chicago/ Texas,"Chicago, IL",RV Soft,Contract,$55 - $58 an hour
+SoftDev,"Staff Software Engineer (Trading Platform, Scala)","Chicago, IL",NinjaTrader,unknown,"$175,000 - $205,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",DRW,unknown,"$150,000 - $225,000 a year"
+SoftDev,iOS Mobile App Developer,"Chicago, IL",RITAM SOFT LLC,Contract,$60 an hour
+SoftDev,Software Engineer,"Chicago, IL",Kernel Trading Technologies LP,Full-time,"$100,181.06 - $264,897.98 a year"
+SoftDev,Sr. Software Engineer - Big Data (T24),"Chicago, IL",Braintree,Full-time,"$72,700 - $176,000 a year"
+SoftDev,Software Engineer II,"Chicago, IL",CME Group,Full-time,"$84,800 - $141,300 a year"
+SoftDev,Software Engineering Manager,"Skokie, IL",Motion Recruitment,Full-time,"$150,000 - $180,000 a year"
+SoftDev,Software Developer - HighJump/Korber,"Chicago, IL",Costco Wholesale,unknown,"$125,000 - $160,000 a year"
+SoftDev,"Software Engineer II, Edge Workflows","Chicago, IL",Tempus,unknown,"$85,000 - $130,000 a year"
+SoftDev,"Senior Software Engineer I (Web, Frontend)","Chicago, IL",NinjaTrader,unknown,"$135,000 - $165,000 a year"
+SoftDev,"Engineer, Software - Unity Developer","Chicago, IL","Arrow International, Inc.",Full-time,unknown
+SoftDev,Software Engineer,"Chicago, IL",FleetPulse,Full-time,"$100,000 - $130,000 a year"
+SoftDev,Senior Software Developer,"Chicago, IL","Sunrise Futures, LLC",unknown,Estimated: $122K - $155K a year
+SoftDev,Senior Software Engineer,"Chicago, IL",Tempus,unknown,"$110,000 - $160,000 a year"
+SoftDev,ADAS Software Engineer,"Chicago, IL",Teoresi Group,Full-time,"$105,341 - $114,017 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Fortinet,Full-time,"$130,000 - $185,000 a year"
+SoftDev,Full Stack Java Developer,"Chicago, IL",Seven Seven Global Services Inc,Full-time,$60 - $70 an hour
+SoftDev,Engineer - Software Test,"Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,C++ Developer (Locals Only),"Chicago, IL",Realign LLC,Contract,Estimated: $87.1K - $110K a year
+SoftDev,"Software Engineer, Test - Flexible Hybrid in Chicago, IL","Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,Java Engineer,"Chicago, IL",Chicago Trading Company (CTC),unknown,"$145,000 - $225,000 a year"
+SoftDev,"PRODUCT ENGINEER, FRONT END","Chicago, IL","Hyatt Corporate Office, Chicago",Full-time,"$84,700 - $120,000 a year"
+SoftDev,C++ Software Engineer,"Chicago, IL",CTC Lateral - Website & LinkedIn,unknown,"$145,000 - $225,000 a year"
+SoftDev,Software Engineer - Test Automation,"Chicago, IL",iManage,Full-time,"$88,000 - $134,000 a year"
+SoftDev,Backend C# Developer / Blazor / Angular CONSULTANT,"Chicago, IL",Intone Networks,Contract,Estimated: $108K - $137K a year
+SoftDev,Software Developer,"Chicago, IL",Quinnox,unknown,Estimated: $99.6K - $126K a year
+SoftDev,FBI Special Agent: Data Science & Intelligence Expertise,United States,Federal Bureau of Investigation,Full-time,"$97,300 - $125,543 a year"
+SoftDev,Visiting Discharge Data Lead-OSI (hybrid),"Chicago, IL",University of Illinois - Chicago,Full-time,"$90,000 - $105,000 a year"
+SoftDev,"Technical Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,"$96,900 a year"
+SoftDev,Remote Coding Expertise for AI Training (Norwegian) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Coding Expertise for AI Training (Austrian German) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Coding Expertise for AI Training (Thai) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$16 - $33 an hour
+SoftDev,Pharmaceutical Statistical Quality Analyst,"Melrose Park, IL",Fresenius Kabi,Full-time,"$61,000 - $85,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (Swedish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Remote Coding Expertise for AI Training (Dutch) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Category Management Analyst II,"Oak Brook, IL",Ace Hardware Corporation,Full-time,"$74,000 - $93,600 a year"
+SoftDev,Staff Data Engineer ( Chicago or Boston ),"Chicago, IL",Press Ganey,Full-time,"$140,000 - $160,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (French) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,"Engineer, Machine Learning (AI)","Chicago, IL",Lenovo,Full-time,"$80,000 - $90,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (Finnish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Data Scientist,"Chicago, IL",PayPal,Full-time,"$72,700 - $176,000 a year"
+SoftDev,"Lead, Data Engineer","Chicago, IL",Northern Trust Corp.,Full-time,"$90,820 - $154,280 a year"
+SoftDev,AI Specialist (Chicago/IL),"Chicago, IL",Programmers - Beyond IT,unknown,Estimated: $98K - $124K a year
+SoftDev,Coding Expertise for AI Training (Italian) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Senior Data Engineer,"Chicago, IL",Adtalem Global Education,Full-time,"$84,835.61 - $149,076.17 a year"
+SoftDev,Remote Coding Expertise for AI Training (Danish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Remote Coding Expertise for AI Training (Malay) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$16 - $33 an hour
+SoftDev,Pharmaceutical Field Sales Representative,"Chicago, IL",Inizio Engage,Full-time,Estimated: $62K - $78.4K a year
+SoftDev,Azure AI Infrastructure Specialist,United States,Peraton,Full-time,"$104,000 - $166,000 a year"
+SoftDev,Coding Expertise for AI Training (Simplified Chinese) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Teacher of Mathematics - AI Trainer,"Chicago, IL",DataAnnotation,Part-time | Full-time,From $40 an hour
+SoftDev,"VP, Marketing Analytics","Rosemont, IL",Wintrust Financial,Full-time,"$117,000 - $158,000 a year"
+SoftDev,"Sr. Analyst, Retail Data","Chicago, IL",Cresco Labs,Full-time,"$74,000 - $100,000 a year"
+SoftDev,"Machine Learning Summer Associate, Digital Pathology","Chicago, IL",Tempus,Seasonal | Internship,$35 an hour
+SoftDev,Visiting Discharge Data Lead-OSI (hybrid),"Chicago, IL",University of Illinois,unknown,"$90,000 - $105,000 a year"
+SoftDev,Data Visualization Designer,"Chicago, IL",Press Ganey,Full-time,"$80,000 - $95,000 a year"
+SoftDev,Math Tutor (Advanced Skills),"Chicago, IL",Huntington Learning Center - Lincoln Park,Part-time,$19 an hour
+SoftDev,People Insights Analyst [PIA],"Chicago, IL",SPINS,unknown,"$70,000 - $80,000 a year"
+SoftDev,2025 AARC Senior Data Science Analyst,"Chicago, IL",Discover Financial Services,unknown,"$103,000 a year"
+SoftDev,Senior HR Data and Analytics Consultant (People Insights),"Chicago, IL",Northern Trust Corp.,Full-time,"$95,600 - $162,400 a year"
+SoftDev,Research Analyst,"Chicago, IL",The University of Chicago,Full-time,"$66,300 - $85,800 a year"
+SoftDev,Staff Data Scientist,"Chicago, IL",Kraft Heinz Company,Full-time,"$115,000 - $143,700 a year"
+SoftDev,Data Scientist II,"Chicago, IL",Press Ganey,Full-time,"$80,000 - $90,000 a year"
+SoftDev,"Asset & Wealth Management, Client Solutions Group (CSG), Distribution Data, Analytics, and Insights - Data Science, Associate - Chicago","Chicago, IL",Goldman Sachs,Part-time | Full-time,"$80,000 - $100,000 a year"
+SoftDev,"Machine Learning Summer Associate, Cell Imaging","Chicago, IL",Tempus,Seasonal | Internship,$35 an hour
+SoftDev,Senior Data Analyst,"Chicago, IL",Chicago Public Schools,Permanent | Full-time,"$76,000 - $100,500 a year"
+SoftDev,Health Informatics and Data Analyst,"Chicago, IL",Midwest Express Clinic,Full-time,Estimated: $58K - $73.4K a year
+SoftDev,"Technical Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,"$96,900 a year"
+SoftDev,"Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,Estimated: $76.8K - $97.2K a year
+SoftDev,Research Data Analyst,"Chicago, IL",Northwestern University,unknown,"$70,017 - $98,462 a year"
+SoftDev,"Sr. Analyst, Retail Data","Chicago, IL",Cresco Labs,Full-time,"$74,000 - $100,000 a year"
+SoftDev,WIOA Administrative Data Analyst,"Chicago, IL",160 Driving Academy,Full-time,"$65,000 - $75,000 a year"
+SoftDev,Data & Analytics Specialist,"Chicago, IL",Lincoln International,unknown,Estimated: $70.7K - $89.5K a year
+SoftDev,Data Analyst,"Chicago, IL",Carole Robertson Center for Learning,unknown,"$58,193 - $73,663 a year"
+SoftDev,Senior HR Analyst,"Chicago, IL",Kraft Heinz Company,Full-time,"$88,000 - $110,000 a year"
+SoftDev,Business Technical Analyst,"Chicago, IL",McDonald's Corporation,Full-time,"$87,050 - $108,810 a year"
+SoftDev,Fulfillment Operations Data Analyst,"Chicago, IL",Outform Group,unknown,"$80,000 - $100,000 a year"
+SoftDev,Research Data Analyst,"Chicago, IL",The University of Chicago,Full-time,Estimated: $55.6K - $70.4K a year
+SoftDev,Senior Data Analyst,"Chicago, IL",Chicago Public Schools,Permanent | Full-time,"$76,000 - $100,500 a year"
+SoftDev,HR Data QA Analyst,"Chicago, IL",Rush University Medical Center,Full-time,"$79,081 - $128,710 a year"
+SoftDev,Sustainability Data Analyst,"Chicago, IL","US AMR-Jones Lang LaSalle Americas, Inc.",Full-time,"$60,000 - $75,000 a year"
+SoftDev,Talent Advisory Analyst,"Chicago, IL",ZRG Partners,Full-time,"$60,000 - $65,000 a year"
+SoftDev,ESG Data Analyst,"Chicago, IL",Conservice LLC,unknown,Estimated: $72.5K - $91.8K a year
+SoftDev,Junior Data Analyst,"Des Plaines, IL","D&A SERVICES, LLC",Full-time,$23 - $24 an hour
+SoftDev,Business Intelligence Strategist,"Chicago, IL",Northern Trust Corp.,Full-time,"$114,700 - $194,900 a year"
+SoftDev,Product Analyst,"Chicago, IL",Redwood Logistics,Full-time,"$65,000 - $95,000 a year"
+SoftDev,C++ Software Engineer,"Chicago, IL","SG Cap Trading, LLC.",Full-time,Estimated: $81.9K - $104K a year
+SoftDev,Database Developer,"Chicago, IL",Medical Home Network,Full-time,"$87,000 - $115,000 a year"
+SoftDev,Staff Software Engineer - Platform Enginering,"Oak Brook, IL",The Chamberlain Group LLC,Full-time,"$97,700 - $184,175 a year"
+SoftDev,2025009 Staff Software Engineer,"Chicago, IL",John Deere,unknown,"$148,949 - $158,949 a year"
+SoftDev,C++ and C# Software Developer,"Hines, IL",Leidos,Full-time,"$85,150 - $153,925 a year"
+SoftDev,Staff Software Engineer - Big Data (T25),"Chicago, IL",Braintree,Full-time,"$84,500 - $204,600 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Lenovo,Full-time,Estimated: $129K - $163K a year
+SoftDev,UI Developer,"Oakbrook Ter, IL",Steneral Consulting,unknown,$55 - $60 an hour
+SoftDev,Software Engineer in Test (Desktop),"Chicago, IL",NinjaTrader,unknown,"$100,000 - $125,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",WALGREENS,unknown,"$98,600 - $157,500 a year"
+SoftDev,Imaging Software Engineer,"Chicago, IL",Lenovo,Full-time,"$100,000 - $150,000 a year"
+SoftDev,Lead Software Engineer,"Chicago, IL","WithMe, Inc.",Full-time,"$200,000 - $220,000 a year"
+SoftDev,Staff Software Engineer - Web SDK,"Chicago, IL",PayPal,Full-time,"$84,500 - $204,600 a year"
+SoftDev,RPA Application Developer (UiPath) - Chicago/ Texas,"Chicago, IL",RV Soft,Contract,$55 - $58 an hour
+SoftDev,"Staff Software Engineer (Trading Platform, Scala)","Chicago, IL",NinjaTrader,unknown,"$175,000 - $205,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",DRW,unknown,"$150,000 - $225,000 a year"
+SoftDev,iOS Mobile App Developer,"Chicago, IL",RITAM SOFT LLC,Contract,$60 an hour
+SoftDev,Software Engineer,"Chicago, IL",Kernel Trading Technologies LP,Full-time,"$100,181.06 - $264,897.98 a year"
+SoftDev,Sr. Software Engineer - Big Data (T24),"Chicago, IL",Braintree,Full-time,"$72,700 - $176,000 a year"
+SoftDev,Software Engineer II,"Chicago, IL",CME Group,Full-time,"$84,800 - $141,300 a year"
+SoftDev,Software Engineering Manager,"Skokie, IL",Motion Recruitment,Full-time,"$150,000 - $180,000 a year"
+SoftDev,Software Developer - HighJump/Korber,"Chicago, IL",Costco Wholesale,unknown,"$125,000 - $160,000 a year"
+SoftDev,"Software Engineer II, Edge Workflows","Chicago, IL",Tempus,unknown,"$85,000 - $130,000 a year"
+SoftDev,"Senior Software Engineer I (Web, Frontend)","Chicago, IL",NinjaTrader,unknown,"$135,000 - $165,000 a year"
+SoftDev,"Engineer, Software - Unity Developer","Chicago, IL","Arrow International, Inc.",Full-time,unknown
+SoftDev,Software Engineer,"Chicago, IL",FleetPulse,Full-time,"$100,000 - $130,000 a year"
+SoftDev,Senior Software Developer,"Chicago, IL","Sunrise Futures, LLC",unknown,Estimated: $122K - $155K a year
+SoftDev,Senior Software Engineer,"Chicago, IL",Tempus,unknown,"$110,000 - $160,000 a year"
+SoftDev,ADAS Software Engineer,"Chicago, IL",Teoresi Group,Full-time,"$105,341 - $114,017 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Fortinet,Full-time,"$130,000 - $185,000 a year"
+SoftDev,Full Stack Java Developer,"Chicago, IL",Seven Seven Global Services Inc,Full-time,$60 - $70 an hour
+SoftDev,Engineer - Software Test,"Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,C++ Developer (Locals Only),"Chicago, IL",Realign LLC,Contract,Estimated: $87.1K - $110K a year
+SoftDev,"Software Engineer, Test - Flexible Hybrid in Chicago, IL","Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,Java Engineer,"Chicago, IL",Chicago Trading Company (CTC),unknown,"$145,000 - $225,000 a year"
+SoftDev,"PRODUCT ENGINEER, FRONT END","Chicago, IL","Hyatt Corporate Office, Chicago",Full-time,"$84,700 - $120,000 a year"
+SoftDev,C++ Software Engineer,"Chicago, IL",CTC Lateral - Website & LinkedIn,unknown,"$145,000 - $225,000 a year"
+SoftDev,Software Engineer - Test Automation,"Chicago, IL",iManage,Full-time,"$88,000 - $134,000 a year"
+SoftDev,Backend C# Developer / Blazor / Angular CONSULTANT,"Chicago, IL",Intone Networks,Contract,Estimated: $108K - $137K a year
+SoftDev,Software Developer,"Chicago, IL",Quinnox,unknown,Estimated: $99.6K - $126K a year
+SoftDev,FBI Special Agent: Data Science & Intelligence Expertise,United States,Federal Bureau of Investigation,Full-time,"$97,300 - $125,543 a year"
+SoftDev,Visiting Discharge Data Lead-OSI (hybrid),"Chicago, IL",University of Illinois - Chicago,Full-time,"$90,000 - $105,000 a year"
+SoftDev,"Technical Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,"$96,900 a year"
+SoftDev,Remote Coding Expertise for AI Training (Norwegian) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Coding Expertise for AI Training (Austrian German) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Coding Expertise for AI Training (Thai) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$16 - $33 an hour
+SoftDev,Pharmaceutical Statistical Quality Analyst,"Melrose Park, IL",Fresenius Kabi,Full-time,"$61,000 - $85,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (Swedish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Remote Coding Expertise for AI Training (Dutch) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Category Management Analyst II,"Oak Brook, IL",Ace Hardware Corporation,Full-time,"$74,000 - $93,600 a year"
+SoftDev,Staff Data Engineer ( Chicago or Boston ),"Chicago, IL",Press Ganey,Full-time,"$140,000 - $160,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (French) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,"Engineer, Machine Learning (AI)","Chicago, IL",Lenovo,Full-time,"$80,000 - $90,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (Finnish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Data Scientist,"Chicago, IL",PayPal,Full-time,"$72,700 - $176,000 a year"
+SoftDev,"Lead, Data Engineer","Chicago, IL",Northern Trust Corp.,Full-time,"$90,820 - $154,280 a year"
+SoftDev,AI Specialist (Chicago/IL),"Chicago, IL",Programmers - Beyond IT,unknown,Estimated: $98K - $124K a year
+SoftDev,Coding Expertise for AI Training (Italian) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Senior Data Engineer,"Chicago, IL",Adtalem Global Education,Full-time,"$84,835.61 - $149,076.17 a year"
+SoftDev,Remote Coding Expertise for AI Training (Danish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Remote Coding Expertise for AI Training (Malay) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$16 - $33 an hour
+SoftDev,Pharmaceutical Field Sales Representative,"Chicago, IL",Inizio Engage,Full-time,Estimated: $62K - $78.4K a year
+SoftDev,Azure AI Infrastructure Specialist,United States,Peraton,Full-time,"$104,000 - $166,000 a year"
+SoftDev,Coding Expertise for AI Training (Simplified Chinese) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Teacher of Mathematics - AI Trainer,"Chicago, IL",DataAnnotation,Part-time | Full-time,From $40 an hour
+SoftDev,"VP, Marketing Analytics","Rosemont, IL",Wintrust Financial,Full-time,"$117,000 - $158,000 a year"
+SoftDev,"Sr. Analyst, Retail Data","Chicago, IL",Cresco Labs,Full-time,"$74,000 - $100,000 a year"
+SoftDev,"Machine Learning Summer Associate, Digital Pathology","Chicago, IL",Tempus,Seasonal | Internship,$35 an hour
+SoftDev,Visiting Discharge Data Lead-OSI (hybrid),"Chicago, IL",University of Illinois,unknown,"$90,000 - $105,000 a year"
+SoftDev,Data Visualization Designer,"Chicago, IL",Press Ganey,Full-time,"$80,000 - $95,000 a year"
+SoftDev,Math Tutor (Advanced Skills),"Chicago, IL",Huntington Learning Center - Lincoln Park,Part-time,$19 an hour
+SoftDev,People Insights Analyst [PIA],"Chicago, IL",SPINS,unknown,"$70,000 - $80,000 a year"
+SoftDev,2025 AARC Senior Data Science Analyst,"Chicago, IL",Discover Financial Services,unknown,"$103,000 a year"
+SoftDev,Senior HR Data and Analytics Consultant (People Insights),"Chicago, IL",Northern Trust Corp.,Full-time,"$95,600 - $162,400 a year"
+SoftDev,Research Analyst,"Chicago, IL",The University of Chicago,Full-time,"$66,300 - $85,800 a year"
+SoftDev,Staff Data Scientist,"Chicago, IL",Kraft Heinz Company,Full-time,"$115,000 - $143,700 a year"
+SoftDev,Data Scientist II,"Chicago, IL",Press Ganey,Full-time,"$80,000 - $90,000 a year"
+SoftDev,"Asset & Wealth Management, Client Solutions Group (CSG), Distribution Data, Analytics, and Insights - Data Science, Associate - Chicago","Chicago, IL",Goldman Sachs,Part-time | Full-time,"$80,000 - $100,000 a year"
+SoftDev,"Machine Learning Summer Associate, Cell Imaging","Chicago, IL",Tempus,Seasonal | Internship,$35 an hour
+SoftDev,Senior Data Analyst,"Chicago, IL",Chicago Public Schools,Permanent | Full-time,"$76,000 - $100,500 a year"
+SoftDev,Health Informatics and Data Analyst,"Chicago, IL",Midwest Express Clinic,Full-time,Estimated: $58K - $73.4K a year
+SoftDev,"Technical Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,"$96,900 a year"
+SoftDev,"Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,Estimated: $76.8K - $97.2K a year
+SoftDev,Research Data Analyst,"Chicago, IL",Northwestern University,unknown,"$70,017 - $98,462 a year"
+SoftDev,"Sr. Analyst, Retail Data","Chicago, IL",Cresco Labs,Full-time,"$74,000 - $100,000 a year"
+SoftDev,WIOA Administrative Data Analyst,"Chicago, IL",160 Driving Academy,Full-time,"$65,000 - $75,000 a year"
+SoftDev,Data & Analytics Specialist,"Chicago, IL",Lincoln International,unknown,Estimated: $70.7K - $89.5K a year
+SoftDev,Data Analyst,"Chicago, IL",Carole Robertson Center for Learning,unknown,"$58,193 - $73,663 a year"
+SoftDev,Senior HR Analyst,"Chicago, IL",Kraft Heinz Company,Full-time,"$88,000 - $110,000 a year"
+SoftDev,Business Technical Analyst,"Chicago, IL",McDonald's Corporation,Full-time,"$87,050 - $108,810 a year"
+SoftDev,Fulfillment Operations Data Analyst,"Chicago, IL",Outform Group,unknown,"$80,000 - $100,000 a year"
+SoftDev,Research Data Analyst,"Chicago, IL",The University of Chicago,Full-time,Estimated: $55.6K - $70.4K a year
+SoftDev,Senior Data Analyst,"Chicago, IL",Chicago Public Schools,Permanent | Full-time,"$76,000 - $100,500 a year"
+SoftDev,HR Data QA Analyst,"Chicago, IL",Rush University Medical Center,Full-time,"$79,081 - $128,710 a year"
+SoftDev,Sustainability Data Analyst,"Chicago, IL","US AMR-Jones Lang LaSalle Americas, Inc.",Full-time,"$60,000 - $75,000 a year"
+SoftDev,Talent Advisory Analyst,"Chicago, IL",ZRG Partners,Full-time,"$60,000 - $65,000 a year"
+SoftDev,ESG Data Analyst,"Chicago, IL",Conservice LLC,unknown,Estimated: $72.5K - $91.8K a year
+SoftDev,Junior Data Analyst,"Des Plaines, IL","D&A SERVICES, LLC",Full-time,$23 - $24 an hour
+SoftDev,Business Intelligence Strategist,"Chicago, IL",Northern Trust Corp.,Full-time,"$114,700 - $194,900 a year"
+SoftDev,Product Analyst,"Chicago, IL",Redwood Logistics,Full-time,"$65,000 - $95,000 a year"
+SoftDev,Data Capture Product Analyst,"Chicago, IL",Kforce,Contract,$50 - $65 an hour
+SoftDev,Structural Market Risk Senior Analyst,"Chicago, IL",BMO US,Full-time,"$56,000 - $104,000 a year"
+SoftDev,"Analyst, Analytics and Business Intelligence","Chicago, IL",The University of Chicago,Full-time,"$74,375 - $87,500 a year"
+SoftDev,Operations Analyst IV,"Chicago, IL",CIBC,Full-time,"$65,000 - $80,000 a year"
+SoftDev,Senior Data Analytics Specialist,"Chicago, IL",Abbott Laboratories,Full-time,"$75,300 - $150,700 a year"
+SoftDev,FOIA Analyst,"Chicago, IL","Contact Government Services, LLC",Full-time,"$65,471.47 - $88,854.14 a year"
+SoftDev,Decision Systems Support-Data Analyst,"Chicago, IL",Northwestern Medicine,Full-time,unknown
+SoftDev,Data Quality Analyst,"Chicago, IL",Press Ganey,Full-time,"$90,000 - $100,000 a year"
+SoftDev,Data Analyst,"Chicago, IL",Lawndale Christian Health Center,Full-time,"$53,500 - $60,008 a year"
+SoftDev,Data Analyst,"Chicago, IL",The University of Chicago,Full-time,"$55,250 - $74,750 a year"
+SoftDev,Diversity Equity Inclusion Analyst,"Chicago, IL",State of Illinois,Full-time,"$70,000 - $80,000 a year"
+SoftDev,Business Analyst,"Chicago, IL",Intone Networks,Contract,Estimated: $89.2K - $113K a year
+SoftDev,Early Career Supply Chain Role (Planner or Analyst),"Chicago, IL",Havi Supply Chain,Full-time,"From $65,000 a year"
+SoftDev,"Senior Analyst, Payments Analytics","Chicago, IL",McDonald's Corporation,Full-time,"$75,700 - $94,620 a year"
+SoftDev,"Analyst, Online Threat Monitoring","Chicago, IL",Prescient,Full-time,"$50,000 - $70,000 a year"
+SoftDev,Global Services Data Business Analyst,"Chicago, IL",Motorola Solutions,Full-time,"$72,700 - $145,400 a year"
+SoftDev,Systems Analyst,"Chicago, IL",Chicago Public Schools,Part-time,"$66,000 - $87,500 a year"
+SoftDev,Business Analyst/ Data Analyst,"Chicago, IL",Intone Networks,Contract,Estimated: $110K - $139K a year
+SoftDev,Senior Analyst - Strategy Consulting,"Chicago, IL",Red Chalk Group,Full-time,Estimated: $70.4K - $89.1K a year
+SoftDev,2025 AARC Senior Data Science Analyst,"Chicago, IL",Discover Financial Services,unknown,"$103,000 a year"
+SoftDev,C++ Software Engineer,"Chicago, IL","SG Cap Trading, LLC.",Full-time,Estimated: $81.9K - $104K a year
+SoftDev,Database Developer,"Chicago, IL",Medical Home Network,Full-time,"$87,000 - $115,000 a year"
+SoftDev,Staff Software Engineer - Platform Enginering,"Oak Brook, IL",The Chamberlain Group LLC,Full-time,"$97,700 - $184,175 a year"
+SoftDev,2025009 Staff Software Engineer,"Chicago, IL",John Deere,unknown,"$148,949 - $158,949 a year"
+SoftDev,C++ and C# Software Developer,"Hines, IL",Leidos,Full-time,"$85,150 - $153,925 a year"
+SoftDev,Staff Software Engineer - Big Data (T25),"Chicago, IL",Braintree,Full-time,"$84,500 - $204,600 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Lenovo,Full-time,Estimated: $129K - $163K a year
+SoftDev,UI Developer,"Oakbrook Ter, IL",Steneral Consulting,unknown,$55 - $60 an hour
+SoftDev,Software Engineer in Test (Desktop),"Chicago, IL",NinjaTrader,unknown,"$100,000 - $125,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",WALGREENS,unknown,"$98,600 - $157,500 a year"
+SoftDev,Imaging Software Engineer,"Chicago, IL",Lenovo,Full-time,"$100,000 - $150,000 a year"
+SoftDev,Lead Software Engineer,"Chicago, IL","WithMe, Inc.",Full-time,"$200,000 - $220,000 a year"
+SoftDev,Staff Software Engineer - Web SDK,"Chicago, IL",PayPal,Full-time,"$84,500 - $204,600 a year"
+SoftDev,RPA Application Developer (UiPath) - Chicago/ Texas,"Chicago, IL",RV Soft,Contract,$55 - $58 an hour
+SoftDev,"Staff Software Engineer (Trading Platform, Scala)","Chicago, IL",NinjaTrader,unknown,"$175,000 - $205,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",DRW,unknown,"$150,000 - $225,000 a year"
+SoftDev,iOS Mobile App Developer,"Chicago, IL",RITAM SOFT LLC,Contract,$60 an hour
+SoftDev,Software Engineer,"Chicago, IL",Kernel Trading Technologies LP,Full-time,"$100,181.06 - $264,897.98 a year"
+SoftDev,Sr. Software Engineer - Big Data (T24),"Chicago, IL",Braintree,Full-time,"$72,700 - $176,000 a year"
+SoftDev,Software Engineer II,"Chicago, IL",CME Group,Full-time,"$84,800 - $141,300 a year"
+SoftDev,Software Engineering Manager,"Skokie, IL",Motion Recruitment,Full-time,"$150,000 - $180,000 a year"
+SoftDev,Software Developer - HighJump/Korber,"Chicago, IL",Costco Wholesale,unknown,"$125,000 - $160,000 a year"
+SoftDev,"Software Engineer II, Edge Workflows","Chicago, IL",Tempus,unknown,"$85,000 - $130,000 a year"
+SoftDev,"Senior Software Engineer I (Web, Frontend)","Chicago, IL",NinjaTrader,unknown,"$135,000 - $165,000 a year"
+SoftDev,"Engineer, Software - Unity Developer","Chicago, IL","Arrow International, Inc.",Full-time,unknown
+SoftDev,Software Engineer,"Chicago, IL",FleetPulse,Full-time,"$100,000 - $130,000 a year"
+SoftDev,Senior Software Developer,"Chicago, IL","Sunrise Futures, LLC",unknown,Estimated: $122K - $155K a year
+SoftDev,Senior Software Engineer,"Chicago, IL",Tempus,unknown,"$110,000 - $160,000 a year"
+SoftDev,ADAS Software Engineer,"Chicago, IL",Teoresi Group,Full-time,"$105,341 - $114,017 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Fortinet,Full-time,"$130,000 - $185,000 a year"
+SoftDev,Full Stack Java Developer,"Chicago, IL",Seven Seven Global Services Inc,Full-time,$60 - $70 an hour
+SoftDev,Engineer - Software Test,"Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,C++ Developer (Locals Only),"Chicago, IL",Realign LLC,Contract,Estimated: $87.1K - $110K a year
+SoftDev,"Software Engineer, Test - Flexible Hybrid in Chicago, IL","Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,Java Engineer,"Chicago, IL",Chicago Trading Company (CTC),unknown,"$145,000 - $225,000 a year"
+SoftDev,"PRODUCT ENGINEER, FRONT END","Chicago, IL","Hyatt Corporate Office, Chicago",Full-time,"$84,700 - $120,000 a year"
+SoftDev,C++ Software Engineer,"Chicago, IL",CTC Lateral - Website & LinkedIn,unknown,"$145,000 - $225,000 a year"
+SoftDev,Software Engineer - Test Automation,"Chicago, IL",iManage,Full-time,"$88,000 - $134,000 a year"
+SoftDev,Backend C# Developer / Blazor / Angular CONSULTANT,"Chicago, IL",Intone Networks,Contract,Estimated: $108K - $137K a year
+SoftDev,Software Developer,"Chicago, IL",Quinnox,unknown,Estimated: $99.6K - $126K a year
+SoftDev,FBI Special Agent: Data Science & Intelligence Expertise,United States,Federal Bureau of Investigation,Full-time,"$97,300 - $125,543 a year"
+SoftDev,Visiting Discharge Data Lead-OSI (hybrid),"Chicago, IL",University of Illinois - Chicago,Full-time,"$90,000 - $105,000 a year"
+SoftDev,"Technical Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,"$96,900 a year"
+SoftDev,Remote Coding Expertise for AI Training (Norwegian) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Coding Expertise for AI Training (Austrian German) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Coding Expertise for AI Training (Thai) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$16 - $33 an hour
+SoftDev,Pharmaceutical Statistical Quality Analyst,"Melrose Park, IL",Fresenius Kabi,Full-time,"$61,000 - $85,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (Swedish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Remote Coding Expertise for AI Training (Dutch) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Category Management Analyst II,"Oak Brook, IL",Ace Hardware Corporation,Full-time,"$74,000 - $93,600 a year"
+SoftDev,Staff Data Engineer ( Chicago or Boston ),"Chicago, IL",Press Ganey,Full-time,"$140,000 - $160,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (French) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,"Engineer, Machine Learning (AI)","Chicago, IL",Lenovo,Full-time,"$80,000 - $90,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (Finnish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Data Scientist,"Chicago, IL",PayPal,Full-time,"$72,700 - $176,000 a year"
+SoftDev,"Lead, Data Engineer","Chicago, IL",Northern Trust Corp.,Full-time,"$90,820 - $154,280 a year"
+SoftDev,AI Specialist (Chicago/IL),"Chicago, IL",Programmers - Beyond IT,unknown,Estimated: $98K - $124K a year
+SoftDev,Coding Expertise for AI Training (Italian) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Senior Data Engineer,"Chicago, IL",Adtalem Global Education,Full-time,"$84,835.61 - $149,076.17 a year"
+SoftDev,Remote Coding Expertise for AI Training (Danish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Remote Coding Expertise for AI Training (Malay) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$16 - $33 an hour
+SoftDev,Pharmaceutical Field Sales Representative,"Chicago, IL",Inizio Engage,Full-time,Estimated: $62K - $78.4K a year
+SoftDev,Azure AI Infrastructure Specialist,United States,Peraton,Full-time,"$104,000 - $166,000 a year"
+SoftDev,Coding Expertise for AI Training (Simplified Chinese) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Teacher of Mathematics - AI Trainer,"Chicago, IL",DataAnnotation,Part-time | Full-time,From $40 an hour
+SoftDev,"VP, Marketing Analytics","Rosemont, IL",Wintrust Financial,Full-time,"$117,000 - $158,000 a year"
+SoftDev,"Sr. Analyst, Retail Data","Chicago, IL",Cresco Labs,Full-time,"$74,000 - $100,000 a year"
+SoftDev,"Machine Learning Summer Associate, Digital Pathology","Chicago, IL",Tempus,Seasonal | Internship,$35 an hour
+SoftDev,Visiting Discharge Data Lead-OSI (hybrid),"Chicago, IL",University of Illinois,unknown,"$90,000 - $105,000 a year"
+SoftDev,Data Visualization Designer,"Chicago, IL",Press Ganey,Full-time,"$80,000 - $95,000 a year"
+SoftDev,Math Tutor (Advanced Skills),"Chicago, IL",Huntington Learning Center - Lincoln Park,Part-time,$19 an hour
+SoftDev,People Insights Analyst [PIA],"Chicago, IL",SPINS,unknown,"$70,000 - $80,000 a year"
+SoftDev,2025 AARC Senior Data Science Analyst,"Chicago, IL",Discover Financial Services,unknown,"$103,000 a year"
+SoftDev,Senior HR Data and Analytics Consultant (People Insights),"Chicago, IL",Northern Trust Corp.,Full-time,"$95,600 - $162,400 a year"
+SoftDev,Research Analyst,"Chicago, IL",The University of Chicago,Full-time,"$66,300 - $85,800 a year"
+SoftDev,Staff Data Scientist,"Chicago, IL",Kraft Heinz Company,Full-time,"$115,000 - $143,700 a year"
+SoftDev,Data Scientist II,"Chicago, IL",Press Ganey,Full-time,"$80,000 - $90,000 a year"
+SoftDev,"Asset & Wealth Management, Client Solutions Group (CSG), Distribution Data, Analytics, and Insights - Data Science, Associate - Chicago","Chicago, IL",Goldman Sachs,Part-time | Full-time,"$80,000 - $100,000 a year"
+SoftDev,"Machine Learning Summer Associate, Cell Imaging","Chicago, IL",Tempus,Seasonal | Internship,$35 an hour
+SoftDev,Senior Data Analyst,"Chicago, IL",Chicago Public Schools,Permanent | Full-time,"$76,000 - $100,500 a year"
+SoftDev,Health Informatics and Data Analyst,"Chicago, IL",Midwest Express Clinic,Full-time,Estimated: $58K - $73.4K a year
+SoftDev,"Technical Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,"$96,900 a year"
+SoftDev,"Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,Estimated: $76.8K - $97.2K a year
+SoftDev,Research Data Analyst,"Chicago, IL",Northwestern University,unknown,"$70,017 - $98,462 a year"
+SoftDev,"Sr. Analyst, Retail Data","Chicago, IL",Cresco Labs,Full-time,"$74,000 - $100,000 a year"
+SoftDev,WIOA Administrative Data Analyst,"Chicago, IL",160 Driving Academy,Full-time,"$65,000 - $75,000 a year"
+SoftDev,Data & Analytics Specialist,"Chicago, IL",Lincoln International,unknown,Estimated: $70.7K - $89.5K a year
+SoftDev,Data Analyst,"Chicago, IL",Carole Robertson Center for Learning,unknown,"$58,193 - $73,663 a year"
+SoftDev,Senior HR Analyst,"Chicago, IL",Kraft Heinz Company,Full-time,"$88,000 - $110,000 a year"
+SoftDev,Business Technical Analyst,"Chicago, IL",McDonald's Corporation,Full-time,"$87,050 - $108,810 a year"
+SoftDev,Fulfillment Operations Data Analyst,"Chicago, IL",Outform Group,unknown,"$80,000 - $100,000 a year"
+SoftDev,Research Data Analyst,"Chicago, IL",The University of Chicago,Full-time,Estimated: $55.6K - $70.4K a year
+SoftDev,Senior Data Analyst,"Chicago, IL",Chicago Public Schools,Permanent | Full-time,"$76,000 - $100,500 a year"
+SoftDev,HR Data QA Analyst,"Chicago, IL",Rush University Medical Center,Full-time,"$79,081 - $128,710 a year"
+SoftDev,Sustainability Data Analyst,"Chicago, IL","US AMR-Jones Lang LaSalle Americas, Inc.",Full-time,"$60,000 - $75,000 a year"
+SoftDev,Talent Advisory Analyst,"Chicago, IL",ZRG Partners,Full-time,"$60,000 - $65,000 a year"
+SoftDev,ESG Data Analyst,"Chicago, IL",Conservice LLC,unknown,Estimated: $72.5K - $91.8K a year
+SoftDev,Junior Data Analyst,"Des Plaines, IL","D&A SERVICES, LLC",Full-time,$23 - $24 an hour
+SoftDev,Business Intelligence Strategist,"Chicago, IL",Northern Trust Corp.,Full-time,"$114,700 - $194,900 a year"
+SoftDev,Product Analyst,"Chicago, IL",Redwood Logistics,Full-time,"$65,000 - $95,000 a year"
+SoftDev,Data Capture Product Analyst,"Chicago, IL",Kforce,Contract,$50 - $65 an hour
+SoftDev,Structural Market Risk Senior Analyst,"Chicago, IL",BMO US,Full-time,"$56,000 - $104,000 a year"
+SoftDev,"Analyst, Analytics and Business Intelligence","Chicago, IL",The University of Chicago,Full-time,"$74,375 - $87,500 a year"
+SoftDev,Operations Analyst IV,"Chicago, IL",CIBC,Full-time,"$65,000 - $80,000 a year"
+SoftDev,Senior Data Analytics Specialist,"Chicago, IL",Abbott Laboratories,Full-time,"$75,300 - $150,700 a year"
+SoftDev,FOIA Analyst,"Chicago, IL","Contact Government Services, LLC",Full-time,"$65,471.47 - $88,854.14 a year"
+SoftDev,Decision Systems Support-Data Analyst,"Chicago, IL",Northwestern Medicine,Full-time,unknown
+SoftDev,Data Quality Analyst,"Chicago, IL",Press Ganey,Full-time,"$90,000 - $100,000 a year"
+SoftDev,Data Analyst,"Chicago, IL",Lawndale Christian Health Center,Full-time,"$53,500 - $60,008 a year"
+SoftDev,Data Analyst,"Chicago, IL",The University of Chicago,Full-time,"$55,250 - $74,750 a year"
+SoftDev,Diversity Equity Inclusion Analyst,"Chicago, IL",State of Illinois,Full-time,"$70,000 - $80,000 a year"
+SoftDev,Business Analyst,"Chicago, IL",Intone Networks,Contract,Estimated: $89.2K - $113K a year
+SoftDev,Early Career Supply Chain Role (Planner or Analyst),"Chicago, IL",Havi Supply Chain,Full-time,"From $65,000 a year"
+SoftDev,"Senior Analyst, Payments Analytics","Chicago, IL",McDonald's Corporation,Full-time,"$75,700 - $94,620 a year"
+SoftDev,"Analyst, Online Threat Monitoring","Chicago, IL",Prescient,Full-time,"$50,000 - $70,000 a year"
+SoftDev,Global Services Data Business Analyst,"Chicago, IL",Motorola Solutions,Full-time,"$72,700 - $145,400 a year"
+SoftDev,Systems Analyst,"Chicago, IL",Chicago Public Schools,Part-time,"$66,000 - $87,500 a year"
+SoftDev,Business Analyst/ Data Analyst,"Chicago, IL",Intone Networks,Contract,Estimated: $110K - $139K a year
+SoftDev,Senior Analyst - Strategy Consulting,"Chicago, IL",Red Chalk Group,Full-time,Estimated: $70.4K - $89.1K a year
+SoftDev,2025 AARC Senior Data Science Analyst,"Chicago, IL",Discover Financial Services,unknown,"$103,000 a year"
+SoftDev,Senior Azure Devops Engineer,"Chicago, IL",Realign LLC,Contract,Estimated: $119K - $151K a year
+SoftDev,Principal DevOps Engineer,"Chicago, IL","Avant, LLC",Full-time,"$130,000 - $190,000 a year"
+SoftDev,DevOps Engineer - SC2025 - DOE,"Rosemont, IL",SellersCommerce,Full-time,Estimated: $104K - $132K a year
+SoftDev,Tax DevOps Engineer,"Chicago, IL",Deloitte,unknown,Estimated: $126K - $160K a year
+SoftDev,"Manager, Software Engineering DevOps","Chicago, IL",Options Clearing Corporation,Full-time,"$138,500 - $233,700 a year"
+SoftDev,System Administrator / DevOps Specialist,"Chicago, IL",Velvetech,unknown,Estimated: $93K - $118K a year
+SoftDev,Senior DevOps Engineer,"Chicago, IL",The University of Chicago,Full-time,"$100,000 - $140,000 a year"
+SoftDev,DevOps Lead,"Chicago, IL",Infosys,unknown,Estimated: $81.2K - $103K a year
+SoftDev,Director PMO/Delivery/DevOps,"Chicago, IL",Havi Supply Chain,Full-time,"$145,000 - $165,000 a year"
+SoftDev,DevOps Practice Lead,"Chicago, IL",Sofbang LLC,unknown,Estimated: $125K - $158K a year
+SoftDev,DevOps Decurity Architect,"Chicago, IL",L&T Technology Services,unknown,Estimated: $127K - $161K a year
+SoftDev,Senior DevOps Engineer,"Chicago, IL",Sidley Austin LLP,Full-time,"$145,000 - $165,000 a year"
+SoftDev,"Manager, DevOps","Chicago, IL",HUB International,Full-time,"$130,000 - $160,000 a year"
+SoftDev,Sr. Manager DevOps & Application Architecture,"Chicago, IL",United Airlines,Full-time,"$137,275 - $187,000 a year"
+SoftDev,Global DevSecOps Platform Director,"Chicago, IL",McDonald's Corporation,Full-time,"$168,350 - $218,860 a year"
+SoftDev,"Sr Lead, DevSecOps Business Security Officer","Chicago, IL",Northern Trust Corp.,Full-time,"$114,500 - $194,700 a year"
+SoftDev,DevOps Engineer and Technical Coach Mentor,"Rosemont, IL",EvolveCyber,unknown,Estimated: $109K - $139K a year
+SoftDev,Senior Staff Platform Engineer,"Chicago, IL",Glassdoor,unknown,"$152,000 - $202,000 a year"
+SoftDev,"Associate Principal, Software Engineering: DevOps","Chicago, IL",Options Clearing Corporation,Full-time,"$121,500 - $194,800 a year"
+SoftDev,Senior DevOps Engineer and Technical Coach Instructor,"Rosemont, IL",EvolveCyber,unknown,Estimated: $114K - $145K a year
+SoftDev,C++ Software Engineer,"Chicago, IL","SG Cap Trading, LLC.",Full-time,Estimated: $81.9K - $104K a year
+SoftDev,Database Developer,"Chicago, IL",Medical Home Network,Full-time,"$87,000 - $115,000 a year"
+SoftDev,Staff Software Engineer - Platform Enginering,"Oak Brook, IL",The Chamberlain Group LLC,Full-time,"$97,700 - $184,175 a year"
+SoftDev,2025009 Staff Software Engineer,"Chicago, IL",John Deere,unknown,"$148,949 - $158,949 a year"
+SoftDev,C++ and C# Software Developer,"Hines, IL",Leidos,Full-time,"$85,150 - $153,925 a year"
+SoftDev,Staff Software Engineer - Big Data (T25),"Chicago, IL",Braintree,Full-time,"$84,500 - $204,600 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Lenovo,Full-time,Estimated: $129K - $163K a year
+SoftDev,UI Developer,"Oakbrook Ter, IL",Steneral Consulting,unknown,$55 - $60 an hour
+SoftDev,Software Engineer in Test (Desktop),"Chicago, IL",NinjaTrader,unknown,"$100,000 - $125,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",WALGREENS,unknown,"$98,600 - $157,500 a year"
+SoftDev,Imaging Software Engineer,"Chicago, IL",Lenovo,Full-time,"$100,000 - $150,000 a year"
+SoftDev,Lead Software Engineer,"Chicago, IL","WithMe, Inc.",Full-time,"$200,000 - $220,000 a year"
+SoftDev,Staff Software Engineer - Web SDK,"Chicago, IL",PayPal,Full-time,"$84,500 - $204,600 a year"
+SoftDev,RPA Application Developer (UiPath) - Chicago/ Texas,"Chicago, IL",RV Soft,Contract,$55 - $58 an hour
+SoftDev,"Staff Software Engineer (Trading Platform, Scala)","Chicago, IL",NinjaTrader,unknown,"$175,000 - $205,000 a year"
+SoftDev,Software Engineer,"Chicago, IL",DRW,unknown,"$150,000 - $225,000 a year"
+SoftDev,iOS Mobile App Developer,"Chicago, IL",RITAM SOFT LLC,Contract,$60 an hour
+SoftDev,Software Engineer,"Chicago, IL",Kernel Trading Technologies LP,Full-time,"$100,181.06 - $264,897.98 a year"
+SoftDev,Sr. Software Engineer - Big Data (T24),"Chicago, IL",Braintree,Full-time,"$72,700 - $176,000 a year"
+SoftDev,Software Engineer II,"Chicago, IL",CME Group,Full-time,"$84,800 - $141,300 a year"
+SoftDev,Software Engineering Manager,"Skokie, IL",Motion Recruitment,Full-time,"$150,000 - $180,000 a year"
+SoftDev,Software Developer - HighJump/Korber,"Chicago, IL",Costco Wholesale,unknown,"$125,000 - $160,000 a year"
+SoftDev,"Software Engineer II, Edge Workflows","Chicago, IL",Tempus,unknown,"$85,000 - $130,000 a year"
+SoftDev,"Senior Software Engineer I (Web, Frontend)","Chicago, IL",NinjaTrader,unknown,"$135,000 - $165,000 a year"
+SoftDev,"Engineer, Software - Unity Developer","Chicago, IL","Arrow International, Inc.",Full-time,unknown
+SoftDev,Software Engineer,"Chicago, IL",FleetPulse,Full-time,"$100,000 - $130,000 a year"
+SoftDev,Senior Software Developer,"Chicago, IL","Sunrise Futures, LLC",unknown,Estimated: $122K - $155K a year
+SoftDev,Senior Software Engineer,"Chicago, IL",Tempus,unknown,"$110,000 - $160,000 a year"
+SoftDev,ADAS Software Engineer,"Chicago, IL",Teoresi Group,Full-time,"$105,341 - $114,017 a year"
+SoftDev,Software Development Engineer,"Chicago, IL",Fortinet,Full-time,"$130,000 - $185,000 a year"
+SoftDev,Full Stack Java Developer,"Chicago, IL",Seven Seven Global Services Inc,Full-time,$60 - $70 an hour
+SoftDev,Engineer - Software Test,"Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,C++ Developer (Locals Only),"Chicago, IL",Realign LLC,Contract,Estimated: $87.1K - $110K a year
+SoftDev,"Software Engineer, Test - Flexible Hybrid in Chicago, IL","Chicago, IL",CBOE,Full-time,"$93,500 - $115,500 a year"
+SoftDev,Java Engineer,"Chicago, IL",Chicago Trading Company (CTC),unknown,"$145,000 - $225,000 a year"
+SoftDev,"PRODUCT ENGINEER, FRONT END","Chicago, IL","Hyatt Corporate Office, Chicago",Full-time,"$84,700 - $120,000 a year"
+SoftDev,C++ Software Engineer,"Chicago, IL",CTC Lateral - Website & LinkedIn,unknown,"$145,000 - $225,000 a year"
+SoftDev,Software Engineer - Test Automation,"Chicago, IL",iManage,Full-time,"$88,000 - $134,000 a year"
+SoftDev,Backend C# Developer / Blazor / Angular CONSULTANT,"Chicago, IL",Intone Networks,Contract,Estimated: $108K - $137K a year
+SoftDev,Software Developer,"Chicago, IL",Quinnox,unknown,Estimated: $99.6K - $126K a year
+SoftDev,FBI Special Agent: Data Science & Intelligence Expertise,United States,Federal Bureau of Investigation,Full-time,"$97,300 - $125,543 a year"
+SoftDev,Visiting Discharge Data Lead-OSI (hybrid),"Chicago, IL",University of Illinois - Chicago,Full-time,"$90,000 - $105,000 a year"
+SoftDev,"Technical Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,"$96,900 a year"
+SoftDev,Remote Coding Expertise for AI Training (Norwegian) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Coding Expertise for AI Training (Austrian German) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Coding Expertise for AI Training (Thai) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$16 - $33 an hour
+SoftDev,Pharmaceutical Statistical Quality Analyst,"Melrose Park, IL",Fresenius Kabi,Full-time,"$61,000 - $85,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (Swedish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Remote Coding Expertise for AI Training (Dutch) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Category Management Analyst II,"Oak Brook, IL",Ace Hardware Corporation,Full-time,"$74,000 - $93,600 a year"
+SoftDev,Staff Data Engineer ( Chicago or Boston ),"Chicago, IL",Press Ganey,Full-time,"$140,000 - $160,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (French) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,"Engineer, Machine Learning (AI)","Chicago, IL",Lenovo,Full-time,"$80,000 - $90,000 a year"
+SoftDev,Remote Coding Expertise for AI Training (Finnish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Data Scientist,"Chicago, IL",PayPal,Full-time,"$72,700 - $176,000 a year"
+SoftDev,"Lead, Data Engineer","Chicago, IL",Northern Trust Corp.,Full-time,"$90,820 - $154,280 a year"
+SoftDev,AI Specialist (Chicago/IL),"Chicago, IL",Programmers - Beyond IT,unknown,Estimated: $98K - $124K a year
+SoftDev,Coding Expertise for AI Training (Italian) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Senior Data Engineer,"Chicago, IL",Adtalem Global Education,Full-time,"$84,835.61 - $149,076.17 a year"
+SoftDev,Remote Coding Expertise for AI Training (Danish) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Remote Coding Expertise for AI Training (Malay) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$16 - $33 an hour
+SoftDev,Pharmaceutical Field Sales Representative,"Chicago, IL",Inizio Engage,Full-time,Estimated: $62K - $78.4K a year
+SoftDev,Azure AI Infrastructure Specialist,United States,Peraton,Full-time,"$104,000 - $166,000 a year"
+SoftDev,Coding Expertise for AI Training (Simplified Chinese) - AI Fact Checker,"Chicago, IL",Outlier Ai,Contract | Freelance,$25 - $50 an hour
+SoftDev,Teacher of Mathematics - AI Trainer,"Chicago, IL",DataAnnotation,Part-time | Full-time,From $40 an hour
+SoftDev,"VP, Marketing Analytics","Rosemont, IL",Wintrust Financial,Full-time,"$117,000 - $158,000 a year"
+SoftDev,"Sr. Analyst, Retail Data","Chicago, IL",Cresco Labs,Full-time,"$74,000 - $100,000 a year"
+SoftDev,"Machine Learning Summer Associate, Digital Pathology","Chicago, IL",Tempus,Seasonal | Internship,$35 an hour
+SoftDev,Visiting Discharge Data Lead-OSI (hybrid),"Chicago, IL",University of Illinois,unknown,"$90,000 - $105,000 a year"
+SoftDev,Data Visualization Designer,"Chicago, IL",Press Ganey,Full-time,"$80,000 - $95,000 a year"
+SoftDev,Math Tutor (Advanced Skills),"Chicago, IL",Huntington Learning Center - Lincoln Park,Part-time,$19 an hour
+SoftDev,People Insights Analyst [PIA],"Chicago, IL",SPINS,unknown,"$70,000 - $80,000 a year"
+SoftDev,2025 AARC Senior Data Science Analyst,"Chicago, IL",Discover Financial Services,unknown,"$103,000 a year"
+SoftDev,Senior HR Data and Analytics Consultant (People Insights),"Chicago, IL",Northern Trust Corp.,Full-time,"$95,600 - $162,400 a year"
+SoftDev,Research Analyst,"Chicago, IL",The University of Chicago,Full-time,"$66,300 - $85,800 a year"
+SoftDev,Staff Data Scientist,"Chicago, IL",Kraft Heinz Company,Full-time,"$115,000 - $143,700 a year"
+SoftDev,Data Scientist II,"Chicago, IL",Press Ganey,Full-time,"$80,000 - $90,000 a year"
+SoftDev,"Asset & Wealth Management, Client Solutions Group (CSG), Distribution Data, Analytics, and Insights - Data Science, Associate - Chicago","Chicago, IL",Goldman Sachs,Part-time | Full-time,"$80,000 - $100,000 a year"
+SoftDev,"Machine Learning Summer Associate, Cell Imaging","Chicago, IL",Tempus,Seasonal | Internship,$35 an hour
+SoftDev,Senior Data Analyst,"Chicago, IL",Chicago Public Schools,Permanent | Full-time,"$76,000 - $100,500 a year"
+SoftDev,Health Informatics and Data Analyst,"Chicago, IL",Midwest Express Clinic,Full-time,Estimated: $58K - $73.4K a year
+SoftDev,"Technical Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,"$96,900 a year"
+SoftDev,"Solution Analyst, Orgbuilder, United States – X Delivery","Chicago, IL",Boston Consulting Group,Full-time,Estimated: $76.8K - $97.2K a year
+SoftDev,Research Data Analyst,"Chicago, IL",Northwestern University,unknown,"$70,017 - $98,462 a year"
+SoftDev,"Sr. Analyst, Retail Data","Chicago, IL",Cresco Labs,Full-time,"$74,000 - $100,000 a year"
+SoftDev,WIOA Administrative Data Analyst,"Chicago, IL",160 Driving Academy,Full-time,"$65,000 - $75,000 a year"
+SoftDev,Data & Analytics Specialist,"Chicago, IL",Lincoln International,unknown,Estimated: $70.7K - $89.5K a year
+SoftDev,Data Analyst,"Chicago, IL",Carole Robertson Center for Learning,unknown,"$58,193 - $73,663 a year"
+SoftDev,Senior HR Analyst,"Chicago, IL",Kraft Heinz Company,Full-time,"$88,000 - $110,000 a year"
+SoftDev,Business Technical Analyst,"Chicago, IL",McDonald's Corporation,Full-time,"$87,050 - $108,810 a year"
+SoftDev,Fulfillment Operations Data Analyst,"Chicago, IL",Outform Group,unknown,"$80,000 - $100,000 a year"
+SoftDev,Research Data Analyst,"Chicago, IL",The University of Chicago,Full-time,Estimated: $55.6K - $70.4K a year
+SoftDev,Senior Data Analyst,"Chicago, IL",Chicago Public Schools,Permanent | Full-time,"$76,000 - $100,500 a year"
+SoftDev,HR Data QA Analyst,"Chicago, IL",Rush University Medical Center,Full-time,"$79,081 - $128,710 a year"
+SoftDev,Sustainability Data Analyst,"Chicago, IL","US AMR-Jones Lang LaSalle Americas, Inc.",Full-time,"$60,000 - $75,000 a year"
+SoftDev,Talent Advisory Analyst,"Chicago, IL",ZRG Partners,Full-time,"$60,000 - $65,000 a year"
+SoftDev,ESG Data Analyst,"Chicago, IL",Conservice LLC,unknown,Estimated: $72.5K - $91.8K a year
+SoftDev,Junior Data Analyst,"Des Plaines, IL","D&A SERVICES, LLC",Full-time,$23 - $24 an hour
+SoftDev,Business Intelligence Strategist,"Chicago, IL",Northern Trust Corp.,Full-time,"$114,700 - $194,900 a year"
+SoftDev,Product Analyst,"Chicago, IL",Redwood Logistics,Full-time,"$65,000 - $95,000 a year"
+SoftDev,Data Capture Product Analyst,"Chicago, IL",Kforce,Contract,$50 - $65 an hour
+SoftDev,Structural Market Risk Senior Analyst,"Chicago, IL",BMO US,Full-time,"$56,000 - $104,000 a year"
+SoftDev,"Analyst, Analytics and Business Intelligence","Chicago, IL",The University of Chicago,Full-time,"$74,375 - $87,500 a year"
+SoftDev,Operations Analyst IV,"Chicago, IL",CIBC,Full-time,"$65,000 - $80,000 a year"
+SoftDev,Senior Data Analytics Specialist,"Chicago, IL",Abbott Laboratories,Full-time,"$75,300 - $150,700 a year"
+SoftDev,FOIA Analyst,"Chicago, IL","Contact Government Services, LLC",Full-time,"$65,471.47 - $88,854.14 a year"
+SoftDev,Decision Systems Support-Data Analyst,"Chicago, IL",Northwestern Medicine,Full-time,unknown
+SoftDev,Data Quality Analyst,"Chicago, IL",Press Ganey,Full-time,"$90,000 - $100,000 a year"
+SoftDev,Data Analyst,"Chicago, IL",Lawndale Christian Health Center,Full-time,"$53,500 - $60,008 a year"
+SoftDev,Data Analyst,"Chicago, IL",The University of Chicago,Full-time,"$55,250 - $74,750 a year"
+SoftDev,Diversity Equity Inclusion Analyst,"Chicago, IL",State of Illinois,Full-time,"$70,000 - $80,000 a year"
+SoftDev,Business Analyst,"Chicago, IL",Intone Networks,Contract,Estimated: $89.2K - $113K a year
+SoftDev,Early Career Supply Chain Role (Planner or Analyst),"Chicago, IL",Havi Supply Chain,Full-time,"From $65,000 a year"
+SoftDev,"Senior Analyst, Payments Analytics","Chicago, IL",McDonald's Corporation,Full-time,"$75,700 - $94,620 a year"
+SoftDev,"Analyst, Online Threat Monitoring","Chicago, IL",Prescient,Full-time,"$50,000 - $70,000 a year"
+SoftDev,Global Services Data Business Analyst,"Chicago, IL",Motorola Solutions,Full-time,"$72,700 - $145,400 a year"
+SoftDev,Systems Analyst,"Chicago, IL",Chicago Public Schools,Part-time,"$66,000 - $87,500 a year"
+SoftDev,Business Analyst/ Data Analyst,"Chicago, IL",Intone Networks,Contract,Estimated: $110K - $139K a year
+SoftDev,Senior Analyst - Strategy Consulting,"Chicago, IL",Red Chalk Group,Full-time,Estimated: $70.4K - $89.1K a year
+SoftDev,2025 AARC Senior Data Science Analyst,"Chicago, IL",Discover Financial Services,unknown,"$103,000 a year"
+SoftDev,Senior Azure Devops Engineer,"Chicago, IL",Realign LLC,Contract,Estimated: $119K - $151K a year
+SoftDev,Principal DevOps Engineer,"Chicago, IL","Avant, LLC",Full-time,"$130,000 - $190,000 a year"
+SoftDev,DevOps Engineer - SC2025 - DOE,"Rosemont, IL",SellersCommerce,Full-time,Estimated: $104K - $132K a year
+SoftDev,Tax DevOps Engineer,"Chicago, IL",Deloitte,unknown,Estimated: $126K - $160K a year
+SoftDev,"Manager, Software Engineering DevOps","Chicago, IL",Options Clearing Corporation,Full-time,"$138,500 - $233,700 a year"
+SoftDev,System Administrator / DevOps Specialist,"Chicago, IL",Velvetech,unknown,Estimated: $93K - $118K a year
+SoftDev,Senior DevOps Engineer,"Chicago, IL",The University of Chicago,Full-time,"$100,000 - $140,000 a year"
+SoftDev,DevOps Lead,"Chicago, IL",Infosys,unknown,Estimated: $81.2K - $103K a year
+SoftDev,Director PMO/Delivery/DevOps,"Chicago, IL",Havi Supply Chain,Full-time,"$145,000 - $165,000 a year"
+SoftDev,DevOps Practice Lead,"Chicago, IL",Sofbang LLC,unknown,Estimated: $125K - $158K a year
+SoftDev,DevOps Decurity Architect,"Chicago, IL",L&T Technology Services,unknown,Estimated: $127K - $161K a year
+SoftDev,Senior DevOps Engineer,"Chicago, IL",Sidley Austin LLP,Full-time,"$145,000 - $165,000 a year"
+SoftDev,"Manager, DevOps","Chicago, IL",HUB International,Full-time,"$130,000 - $160,000 a year"
+SoftDev,Sr. Manager DevOps & Application Architecture,"Chicago, IL",United Airlines,Full-time,"$137,275 - $187,000 a year"
+SoftDev,Global DevSecOps Platform Director,"Chicago, IL",McDonald's Corporation,Full-time,"$168,350 - $218,860 a year"
+SoftDev,"Sr Lead, DevSecOps Business Security Officer","Chicago, IL",Northern Trust Corp.,Full-time,"$114,500 - $194,700 a year"
+SoftDev,DevOps Engineer and Technical Coach Mentor,"Rosemont, IL",EvolveCyber,unknown,Estimated: $109K - $139K a year
+SoftDev,Senior Staff Platform Engineer,"Chicago, IL",Glassdoor,unknown,"$152,000 - $202,000 a year"
+SoftDev,"Associate Principal, Software Engineering: DevOps","Chicago, IL",Options Clearing Corporation,Full-time,"$121,500 - $194,800 a year"
+SoftDev,Senior DevOps Engineer and Technical Coach Instructor,"Rosemont, IL",EvolveCyber,unknown,Estimated: $114K - $145K a year
+SoftDev,Senior DevSecOps Engineer,"Chicago, IL",The University of Chicago,Full-time,"$145,000 - $170,000 a year"
+SoftDev,Security Architecture Engineer,"Chicago, IL",HUB International,Full-time,"$125,000 - $140,000 a year"
+SoftDev,Senior Staff Platform Engineer,"Chicago, IL",Glassdoor,unknown,"$152,000 - $202,000 a year"
+SoftDev,Lead DevSecOps Engineer,"Chicago, IL",CME Group,Full-time,"$125,300 - $208,800 a year"
+SoftDev,Sr. Software Engineer - DevOps (Infra as a code),"Chicago, IL",U.S. Bank National Association,Full-time,"$119,765 - $154,990 a year"
+SoftDev,Technical Projet Manager (AWS DevOps),"Chicago, IL",ProIT Inc.,Contract,$55 - $60 an hour
+SoftDev,Sr Manager -IT App Dev Fuel Management,"Chicago, IL",United Airlines,Full-time,"$137,275 - $187,000 a year"
+SoftDev,Senior DevSecOps Engineer/RPA Senior Product Expert,"Chicago, IL","Professional Solutions Delivered, LLC",unknown,"$125,000 - $140,000 a year"
+SoftDev,"VP, AWS Cloud Architect","Chicago, IL",Synchrony,unknown,"$130,000 - $210,000 a year"
+SoftDev,Solutions Architect III - AWS,"Chicago, IL",Tek Ninjas,Contract,Estimated: $135K - $171K a year
