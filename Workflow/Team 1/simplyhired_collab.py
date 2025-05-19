@@ -409,7 +409,7 @@ def main():
             listings_frame = pd.DataFrame(job_dict)
 
             # Append the data to the CSV file
-            file_name = "../../Data Cleaning/simply_hired.csv"
+            file_name = "../../Data/Scraped_Data/simply_hired.csv"
             if not os.path.isfile(file_name):
                 # If the file doesn't exist, write with header
                 listings_frame.to_csv(file_name, index=False)
