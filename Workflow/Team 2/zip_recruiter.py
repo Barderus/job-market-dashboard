@@ -11,6 +11,12 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium_stealth import stealth
 from webdriver_manager.chrome import ChromeDriverManager
+from datetime import datetime
+
+# Generate a unique filename
+timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+output_file = f"zip-recruiter-pull-{timestamp}.csv"
+
 
 # List of user agents string
 user_agents = [
@@ -26,6 +32,19 @@ user_agents = [
     "Mozilla/5.0 (X11; Linux i686; rv:124.0) Gecko/20100101 Firefox/124.0"]
 
 base_url = "https://www.ziprecruiter.com/jobs-search?search="
+
+def save_progress(data_dict, filename):
+    df = pd.DataFrame(data_dict)
+    if not df.empty:
+        if not os.path.exists(filename):
+            df.to_csv(filename, index=False)
+            print(f"[Saved] Created new file {filename}")
+        else:
+            df.to_csv(filename, mode='a', header=False, index=False)
+            print(f"[Saved] Appended data to {filename}")
+    else:
+        print("[Warning] No data to save.")
+
 
 
 def scrape_page(driver, job_dict, url):
@@ -125,55 +144,36 @@ def next_page(driver):
 
 
 def main():
-    sw_url = "https://www.ziprecruiter.com/jobs-search?search=software+engineer&location=Chicago%2C+IL&lvk=JG_74EGAdtycohHKniD2eg.--NacsUqfMF"
-    ds_url = "https://www.ziprecruiter.com/jobs-search?search=data+scientist&location=Chicago%2C+IL&lvk=DBml3W3I7MdIbFS0oJWb1g.--Nfet94gmo"
-    da_url = "https://www.ziprecruiter.com/jobs-search?search=data+analyst&location=Chicago%2C+IL&lvk=aJd0EasHdgwWMwd02uxqQw.--NfetAEI3k"
-    dvop_url = "https://www.ziprecruiter.com/jobs-search?search=dev+ops&location=Chicago%2C+IL&lvk=8Fn5DTVbgDPdaWpheHFmCQ.--Nfe4Q0T8g"
-    mleng_url = "https://www.ziprecruiter.com/jobs-search?search=machine+learning+engineer&location=Chicago%2C+IL&lvk=MOx4LHDzHjJ-JTykfwkowA.--NfetAqkTB"
-    cloud_url = "https://www.ziprecruiter.com/jobs-search?search=cloud+engineer&location=Chicago%2C+IL&lvk=8Fn5DTVbgDPdaWpheHFmCQ.--Nfe4Q0T8g"
-    web_url = "https://www.ziprecruiter.com/jobs-search?search=web+developer&location=Chicago%2C+IL&lvk=vGvBRpEKvrSltPTb5j8_iQ.--NffGxO2Yg"
-    dteng_url = "https://www.ziprecruiter.com/jobs-search?search=data+engineer&location=Chicago%2C+IL&lvk=3kz6loGNfWcrdiKNC_NEBw.--Nfeszg53B"
+    import os
+    from pathlib import Path
 
-    url_list = [sw_url, ds_url, da_url, dvop_url, mleng_url, cloud_url, web_url, dteng_url]
+    url_list = [
+        "https://www.ziprecruiter.com/jobs-search?search=software+engineer&location=Chicago%2C+IL&lvk=JG_74EGAdtycohHKniD2eg.--NacsUqfMF",
+        "https://www.ziprecruiter.com/jobs-search?search=data+scientist&location=Chicago%2C+IL&lvk=DBml3W3I7MdIbFS0oJWb1g.--Nfet94gmo",
+        "https://www.ziprecruiter.com/jobs-search?search=data+analyst&location=Chicago%2C+IL&lvk=aJd0EasHdgwWMwd02uxqQw.--NfetAEI3k",
+        "https://www.ziprecruiter.com/jobs-search?search=dev+ops&location=Chicago%2C+IL&lvk=8Fn5DTVbgDPdaWpheHFmCQ.--Nfe4Q0T8g",
+        "https://www.ziprecruiter.com/jobs-search?search=machine+learning+engineer&location=Chicago%2C+IL&lvk=MOx4LHDzHjJ-JTykfwkowA.--NfetAqkTB",
+        "https://www.ziprecruiter.com/jobs-search?search=cloud+engineer&location=Chicago%2C+IL&lvk=8Fn5DTVbgDPdaWpheHFmCQ.--Nfe4Q0T8g",
+        "https://www.ziprecruiter.com/jobs-search?search=web+developer&location=Chicago%2C+IL&lvk=vGvBRpEKvrSltPTb5j8_iQ.--NffGxO2Yg",
+        "https://www.ziprecruiter.com/jobs-search?search=data+engineer&location=Chicago%2C+IL&lvk=3kz6loGNfWcrdiKNC_NEBw.--Nfeszg53B"
+    ]
 
-    # Set up Chrome options
     chrome_options = Options()
     chrome_options.add_experimental_option("detach", True)
     chrome_options.add_argument("start-maximized")
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     chrome_options.add_experimental_option('useAutomationExtension', False)
-
-    # run in headless mode
-    # chrome_options.add_argument("--headless")
-
-    # disable the AutomationControlled feature of Blink rendering engine
     chrome_options.add_argument('--disable-blink-features=AutomationControlled')
-
-    # disable pop-up blocking
     chrome_options.add_argument('--disable-popup-blocking')
-
-    # start the browser window in maximized mode
     chrome_options.add_argument('--start-maximized')
-
-    # disable extensions
     chrome_options.add_argument('--disable-extensions')
-
-    # disable sandbox mode
     chrome_options.add_argument('--no-sandbox')
-
-    # disable shared memory usage
     chrome_options.add_argument('--disable-dev-shm-usage')
+    chrome_options.add_argument(f"--user-agent={random.choice(user_agents)}")
 
-    # Choose a random User-Agent from the list
-    random_user_agent = random.choice(user_agents)
-    chrome_options.add_argument(f"--user-agent={random_user_agent}")
-
-    # create a driver instance
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 
-    # Change the property value of the navigator for webdriver to undefined
     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-
     stealth(driver,
             languages=["en-US", "en"],
             vendor="Google Inc.",
@@ -183,56 +183,44 @@ def main():
             fix_hairline=True,
             )
 
-    job_dict = {  # "unique_title":[],          # Unique job title
-        "title": [],  # Title of the job
-        "job_location": [],  # Location ( State )
-        "company_name": [],  # Company name
-        "job_type": [],  # Whether full-time, part-time, intern
-        "job_description":[],
-        # "remote": [],               # Remote, in-person, hybrid
-        # "wage": [],                 # $ per hour
-        "job_salary": [],  # $ per year
-        # "education": [],            # Undergrad, master, phd
-        # "prog_language": [],        # Programming languages
-        # "framework": [],            # React, Angular, Django, Flask, etc
-        # "others":[]                 # Database, Cloud technologies, etc
+    job_dict = {
+        "title": [],
+        "job_location": [],
+        "company_name": [],
+        "job_type": [],
+        "job_description": [],
+        "job_salary": [],
     }
 
-    # Visit the target website
-    for url in url_list:
-        driver.get(url)
+    try:
+        for url in url_list:
+            driver.get(url)
+            element = WebDriverWait(driver, 20).until(
+                EC.visibility_of_element_located((By.CLASS_NAME, 'content'))
+            )
+            ActionChains(driver).move_to_element(element).click().perform()
 
-        # Wait until the main content element is visible on the page
-        element = WebDriverWait(driver, 20).until(
-            EC.visibility_of_element_located((By.CLASS_NAME, 'content'))
-        )
+            page = 0
+            while True:
+                print(f"\n[Info] Scraping page {page + 1} from: {url}")
+                scrape_page(driver, job_dict, url)
+                save_progress(job_dict, output_file)
 
-        # Perform a click action on the main content element
-        action = ActionChains(driver)
-        action.move_to_element(element).click().perform()
+                if not next_page(driver):
+                    print("No more pages to scrape for this job role.")
+                    break
 
-        # Initialize a page counter
-        page = 0
+                url = driver.current_url
+                page += 1
 
-        # Main scrape loop
-        while True:
-            scrape_page(driver, job_dict, url)
-            if not next_page(driver):
-                print("No more pages to scrape.")
-                break
+    except Exception as e:
+        print(f"[CRASH] Error occurred: {e}")
+        print("[Info] Saving progress before exiting...")
+        save_progress(job_dict, output_file)
 
-            # Update the URL to the current page's URL
-            url = driver.current_url
-            page += 1
-
-    driver.quit()
-    df = pd.DataFrame(job_dict)
-    df.to_csv('jobs1.csv', index=False)
-
-    if df.empty:
-        print("The DataFrame is empty. No data was collected.")
-    else:
-        print(df.iloc[0])
+    finally:
+        driver.quit()
+        print("[Info] Driver closed.")
 
 
 if __name__ == '__main__':

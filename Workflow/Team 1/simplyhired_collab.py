@@ -14,6 +14,13 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.webdriver import WebDriver as ChromeDriver
 
+from datetime import datetime
+
+# Generate a unique filename for this run
+timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+output_file = f"simplyhired_output_{timestamp}.csv"
+
+
 # Exceptions to ignore when waiting for
 # element searching to return a value
 ignored_exceptions = (NoSuchElementException, StaleElementReferenceException)
@@ -408,14 +415,12 @@ def main():
             # Create a DataFrame for the current page's data
             listings_frame = pd.DataFrame(job_dict)
 
-            # Append the data to the CSV file
-            file_name = "../../Data Cleaning/simply_hired.csv"
-            if not os.path.isfile(file_name):
-                # If the file doesn't exist, write with header
-                listings_frame.to_csv(file_name, index=False)
+            if not os.path.isfile(output_file):
+                listings_frame.to_csv(output_file, index=False)
+                print(f"[Saved] Created new file: {output_file}")
             else:
-                # If the file exists, append without header
-                listings_frame.to_csv(file_name, mode='a', header=False, index=False)
+                listings_frame.to_csv(output_file, mode='a', header=False, index=False)
+                print(f"[Saved] Appended to file: {output_file}")
 
             # Go to the next page
             next_page(driver)
