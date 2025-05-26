@@ -42,14 +42,14 @@ Between 2020 and 2024, the job market for tech professionals evolved significant
 
 ## 🛠️ Tech Stack
 
-| Tool / Library        | Purpose                          |
-|-----------------------|----------------------------------|
-| **Python 3.11+**       | Primary programming language     |
-| **Pandas / NumPy**     | Data manipulation and cleaning   |
-| **Matplotlib / Seaborn** | Data visualization              |
-| **Jupyter Notebooks**  | Exploratory analysis             |
-| **Streamlit** _(WIP)_  | Dashboard app interface          |
-| **Scikit-learn / spaCy** _(Planned)_ | NLP and clustering for job descriptions |
+| Tool / Library               | Purpose                          |
+|------------------------------|----------------------------------|
+| **Python 3.11+**             | Primary programming language     |
+| **Pandas / NumPy**           | Data manipulation and cleaning   |
+| **Matplotlib / Seaborn**     | Data visualization              |
+| **Jupyter Notebooks**        | Exploratory analysis             |
+| **Streamlit** _(WIP)_        | Dashboard app interface          |
+| **Natural Language Toolkit** | NLP and clustering for job descriptions |
 
 ---
 ### Next Steps
@@ -59,6 +59,6 @@ Planned enhancements to this project include:
 - Building a **Streamlit dashboard** for real-time filtering and visualization
 - Adding **NLP analysis** of job descriptions to uncover trends in soft vs hard skills
 - Saving **interactive visualizations** (Plotly or Altair) for user-controlled analysis
-- Deploying the dashboard via **Streamlit Cloud** or **Render**
+- Deploying the dashboard via **Streamlit Cloud**
 
 ---
