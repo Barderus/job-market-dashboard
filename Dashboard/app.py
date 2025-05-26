@@ -35,11 +35,6 @@ salary_df = df[df['avg_salary'].notna() & (df['avg_salary'] > 0)]
 description_df = df[df['Description_clean'].notna() & (df['Description_clean'].str.strip() != '')]
 
 # --- Sidebar ---
-st.sidebar.header("Filters")
-selected_job_types = st.sidebar.multiselect("Select Job Types", df['Job_Type'].unique(), default=list(df['Job_Type'].unique()))
-df = df[df['Job_Type'].isin(selected_job_types)]
-salary_df = salary_df[salary_df['Job_Type'].isin(selected_job_types)]
-description_df = description_df[description_df['Job_Type'].isin(selected_job_types)]
 
 # --- Visuals ---
 st.subheader("Top 10 Job Titles")
