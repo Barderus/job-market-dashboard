@@ -1,4 +1,4 @@
-# 📊 Job Market Dashboard (2020–2024)
+#  Job Market Dashboard (2020–2024)
 
 A multi-source data analysis project that explores trends in the U.S. tech job market using datasets from LinkedIn, Glassdoor, and other job boards. 
 
@@ -6,7 +6,7 @@ This project analyzes demand for roles, skills, and locations over time to uncov
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 Between 2020 and 2024, the job market for tech professionals evolved significantly due to the pandemic, the rise of remote work, and economic shifts. This project aggregates and analyzes multiple job posting datasets to identify:
 
@@ -14,33 +14,33 @@ Between 2020 and 2024, the job market for tech professionals evolved significant
 - Geographic trends in tech hiring (remote vs on-site)
 - Salary distributions and growth in different states
 
-> 💡 The project is being expanded into an interactive dashboard using Streamlit to allow dynamic exploration of these trends by students.
+>  The project is being expanded into an interactive dashboard using Streamlit to allow dynamic exploration of these trends by students.
 
 ---
 
-## 📈 Key Features
+##  Key Features
 
-- 📂 **Multi-source Dataset Integration**  
+-  **Multi-source Dataset Integration**  
   Combines job data from LinkedIn, Glassdoor, and other job boards.
 
-- 🧼 **Data Cleaning & Preprocessing**  
+-  **Data Cleaning & Preprocessing**  
   Standardizes columns, cleans text, handles missing values, and merges across schemas.
 
-- 📊 **Exploratory Data Analysis**  
+-  **Exploratory Data Analysis**  
   Insightful charts and tables generated with Matplotlib, Seaborn, and Pandas.
 
-- 🗺️ **Location-based Insights**  
+- ️ **Location-based Insights**  
   Visualizes how job demand varies across states and regions.
 
-- 💼 **Title & Skill Analysis**  
+-  **Title & Skill Analysis**  
   Frequency tracking of roles like Data Scientist, Software Engineer, ML Engineer, and in-demand skills (e.g., Python, SQL, AWS).
 
-- 🔍 **Future NLP Pipeline (In Progress)**  
+-  **Future NLP Pipeline (In Progress)**  
   Applying keyword extraction and topic modeling to analyze trends in job descriptions.
 
 ---
 
-## 🛠️ Tech Stack
+## ️ Tech Stack
 
 | Tool / Library               | Purpose                          |
 |------------------------------|----------------------------------|
@@ -50,15 +50,14 @@ Between 2020 and 2024, the job market for tech professionals evolved significant
 | **Jupyter Notebooks**        | Exploratory analysis             |
 | **Streamlit** _(WIP)_        | Dashboard app interface          |
 | **Natural Language Toolkit** | NLP and clustering for job descriptions |
+| **Beautiful Soup**         | Web scrapping |
+| **Selenium** | Web scrapping for websites with dynamic page|
 
 ---
 ### Next Steps
 
 Planned enhancements to this project include:
-
-- Building a **Streamlit dashboard** for real-time filtering and visualization
-- Adding **NLP analysis** of job descriptions to uncover trends in soft vs hard skills
-- Saving **interactive visualizations** (Plotly or Altair) for user-controlled analysis
 - Deploying the dashboard via **Streamlit Cloud**
+- Utilize Tableau or PowerBI
 
 ---
