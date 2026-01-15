@@ -94,3 +94,20 @@ def categorize_skills(df_skills):
     """
     df_skills['Category'] = df_skills['Skill'].map(CATEGORY_MAP).fillna('Other')
     return df_skills.sort_values(['Category', 'Mentions'], ascending=[True, False])
+
+def extract_skills_from_text(text):
+    """
+    Given a job description, return a sorted list of canonical skills found.
+    """
+    if pd.isna(text):
+        return []
+
+    text = text.lower()
+    found_skills = set()
+
+    for skill, variations in SKILL_VARIATIONS.items():
+        pattern = r'\b(' + '|'.join(re.escape(v) for v in variations) + r')\b'
+        if re.search(pattern, text):
+            found_skills.add(skill)
+
+    return sorted(found_skills)
