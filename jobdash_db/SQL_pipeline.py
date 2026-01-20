@@ -1,7 +1,7 @@
 from jobdash_db.db_connection import get_connection
 from jobdash_db.insights_SQL import INSIGHTS_SQL
 from jobdash_db.transformation_SQL import TRANSFORMATION_SQL
-from jobdash_db.views_SQL import VIEW_SQL
+from jobdash_db.views_SQL import VIEWS_SQL
 
 def split_sql(sql):
     return [s.strip() for s in sql.strip().split(";") if s.strip()]
@@ -20,8 +20,9 @@ def main():
             run_sql_block(cursor, sql)
 
         print("Running views...")
-        for sql in VIEW_SQL:
+        for name, sql in VIEWS_SQL:
             run_sql_block(cursor, sql)
+
 
         conn.commit()
         print("SQL pipeline complete.")
