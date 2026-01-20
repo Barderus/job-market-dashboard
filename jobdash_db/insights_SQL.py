@@ -42,8 +42,8 @@ roles_per_pay = """
     """
 
 INSIGHTS_SQL = [
-    top_US_roles,
-    top_companies,
-    roles_demanded,
-    roles_per_pay,
+    ("top_US_roles", top_US_roles),
+    ("top_companies", top_companies),
+    ("roles_demanded", roles_demanded),
+    ("roles_per_pay", roles_per_pay),
 ]
