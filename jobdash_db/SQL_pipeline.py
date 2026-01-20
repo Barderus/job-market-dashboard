@@ -10,6 +10,24 @@ def run_sql_block(cursor, sql_block):
     for stmt in split_sql(sql_block):
         cursor.execute(stmt)
 
+def print_query_results(cursor, name, max_rows=10):
+    columns = [desc[0] for desc in cursor.description]
+    rows = cursor.fetchall()
+
+    print(f"\n{name} ({len(rows)} rows)")
+    print("-" * 80)
+
+    # Header
+    header = " | ".join(f"{col:<20}" for col in columns)
+    print(header)
+    print("-" * len(header))
+
+    for row in rows[:max_rows]:
+        print(" | ".join(f"{str(val):<20}" for val in row))
+
+    if len(rows) > max_rows:
+        print(f"... ({len(rows) - max_rows} more rows)")
+
 def main():
     conn = get_connection()
     cursor = conn.cursor()
@@ -29,11 +47,12 @@ def main():
 
         print("\nRunning insights:")
         for name, sql in INSIGHTS_SQL:
-            cursor.execute(sql)
-            rows = cursor.fetchall()
-            print(f"\n{name}:")
-            for row in rows[:10]:
-                print(row)
+            try:
+                cursor.execute(sql)
+                print_query_results(cursor, name)
+            except Exception as e:
+                print(f"\n{name}: FAILED -> {e}")
+
 
     finally:
         cursor.close()
