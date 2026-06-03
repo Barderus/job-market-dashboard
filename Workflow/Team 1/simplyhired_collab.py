@@ -1,24 +1,16 @@
-import os
-import random
-import pandas as pd
-from selenium import webdriver
-from selenium_stealth import stealth
 from selenium.webdriver.common.by import By
 from selenium.common import NoSuchElementException
-from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common import StaleElementReferenceException
 from selenium.webdriver.remote.webdriver import WebElement
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.webdriver import WebDriver as ChromeDriver
 
-from datetime import datetime
+from Workflow.scraper_utils import append_rows, build_stealth_driver, make_job_row, make_output_file
 
-# Generate a unique filename for this run
-timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-output_file = f"simplyhired_output_{timestamp}.csv"
+
+output_file = make_output_file("simplyhired_output")
 
 
 # Exceptions to ignore when waiting for
@@ -30,18 +22,6 @@ YEARLY_WORK_DAYS = 260
 
 # Assuming that x hours a day are worked on average...
 DAILY_WORK_HOURS = 8
-
-# List of user agent strings
-user_agents = ["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
-               "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0",
-               "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.2420.81",
-               "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
-               "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
-               "Mozilla/5.0 (Macintosh; Intel Mac OS X 14.4; rv:124.0) Gecko/20100101 Firefox/124.0",
-               "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15",
-               "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
-               "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
-               "Mozilla/5.0 (X11; Linux i686; rv:124.0) Gecko/20100101 Firefox/124.0"]
 
 # Handy Stack Overflow page to help with
 # handling elements that haven't loaded yet:
@@ -148,7 +128,8 @@ def get_enlarged_info(driver: ChromeDriver, element: WebElement, old_box):
 # https://www.browserstack.com/guide/selenium-wait-for-page-to-load
 
 # Where the action is at B)
-def scrape_page(driver: ChromeDriver, job_dict):
+def scrape_page(driver: ChromeDriver, search_term: str, search_location: str, source_url: str):
+    page_rows = []
     try:
         # Gets the unordered list with list elements
         # containing job info that's on each page.
@@ -171,23 +152,37 @@ def scrape_page(driver: ChromeDriver, job_dict):
                 # New methods for searching
                 # field info, courtesty of Mike
                 #job_dict["Unique Title"].append("SoftDev")
-                job_dict["Title"].append(wait_for_visible_element(element, By.TAG_NAME, "a").text.strip())
-                job_dict["Job Location"].append(wait_for_visible_element(element, By.CLASS_NAME, "css-1t92pv").text.strip())
-                job_dict["Company Name"].append(wait_for_visible_element(element, By.CSS_SELECTOR, 'span[data-testid="companyName"]').text.strip())
+                title = wait_for_visible_element(element, By.TAG_NAME, "a").text.strip()
+                location = wait_for_visible_element(element, By.CLASS_NAME, "css-1t92pv").text.strip()
+                company = wait_for_visible_element(element, By.CSS_SELECTOR, 'span[data-testid="companyName"]').text.strip()
                 
                 try:
-                    job_dict["Job Type"].append(wait_for_visible_element(info_box, By.CSS_SELECTOR, 'span[data-testid="viewJobBodyJobDetailsJobType"]', 0.065, 0.01).text.strip())
+                    job_type = wait_for_visible_element(info_box, By.CSS_SELECTOR, 'span[data-testid="viewJobBodyJobDetailsJobType"]', 0.065, 0.01).text.strip()
 
                 except TimeoutException:
                     print("Job Type Unknown")
-                    job_dict["Job Type"].append("unknown")
+                    job_type = "unknown"
 
                 try:
-                    job_dict["Salary"].append(wait_for_visible_element(info_box, By.CSS_SELECTOR, 'span[data-testid="viewJobBodyJobCompensation"]', 0.065, 0.01).text.strip())
+                    salary = wait_for_visible_element(info_box, By.CSS_SELECTOR, 'span[data-testid="viewJobBodyJobCompensation"]', 0.065, 0.01).text.strip()
 
                 except TimeoutException:
                     print("Salary Unknown")
-                    job_dict["Salary"].append("unknown")
+                    salary = "unknown"
+
+                page_rows.append(
+                    make_job_row(
+                        source="simplyhired",
+                        search_term=search_term,
+                        search_location=search_location,
+                        source_url=source_url,
+                        title=title,
+                        company_name=company,
+                        job_location=location,
+                        job_type=job_type,
+                        salary=salary,
+                    )
+                )
 
                 # Copy-paste for getting data for new field:
                 # job_dict["FIELD"].append(wait_for_visible_element(info_box, By.SOMETHING, "SEARCH_TERM").text.strip())
@@ -203,6 +198,8 @@ def scrape_page(driver: ChromeDriver, job_dict):
     
     except StaleElementReferenceException:
         print("Element no longer detected: scrape outer operations")
+
+    return page_rows
 
 # Navigates to the next page.
 # Simple enough, right? Heh...
@@ -324,67 +321,7 @@ def main():
     # How many pages to search
     pages_to_search = 2
 
-    # Establishing our dictionary of job listing data
-    job_dict = {
-        #"Unique Title": [],         # Unique job title
-        "Title": [],                # Title of the job
-        "Job Location": [],         # Location ( State )
-        "Company Name": [],         # Company name
-        "Job Type": [],             # Whether full-time, part-time, intern
-        #"Remote": [],               # Remote, in-person, hybrid
-        #"Wage": [],                 # $ per hour
-        "Salary": [],               # $ per year
-        #"Education": [],            # Undergrad, master, phd
-        #"Languages": [],            # Programming languages
-        #"Frameworks": [],           # React, Angular, Django, Flask, etc
-        #"Other": []                 # Database, Cloud technologies, etc
-    }
-    
-    # Setting up Chrome Options
-    chrome_options = Options()
-
-    # Start the window to open maximized
-    chrome_options.add_argument("start-maximized")
-
-    # These options are critical in avoiding
-    # detection. They make it seem like we are
-    # not automating a page and help us appear
-    # to share much more likeness to a normal
-    # user as we scrape.
-    chrome_options.add_experimental_option('useAutomationExtension', False)
-    # chrome_options.add_argument("--disable-blink-features=AutomationControlled")
-    chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
-
-    # The "--headless" argument means that the
-    # scraping will occur without showing the
-    # window of the browser while it happens.
-    # Chrome has an old and new version of
-    # headless operation. The argument
-    # "--headless=new" uses the newer version.
-
-    # Uncomment the below line to run the
-    # scraping with headless navigation.
-    # chrome_options.add_argument("--headless=new")
-
-    # Choose a random User-Agent from the list
-    # and add it to our options
-    random_user_agent = random.choice(user_agents)
-    chrome_options.add_argument(f"--user-agent={random_user_agent}")
-
-    # Initializing our webdriver :D
-    driver = webdriver.Chrome(options=chrome_options)
-
-    # Use of selenium-stealth to aid
-    # in our avoidance of detection
-    stealth(
-        driver,
-        languages=["en-US", "en"],
-        vendor="Google Inc.",
-        platform="Win32",
-        webgl_vendor="Intel Inc.",
-        renderer="Intel Iris OpenGL Engine",
-        fix_hairline=True,
-    )
+    driver = build_stealth_driver(detach=True)
 
     # The URL to visit
     sw_url = "https://www.simplyhired.com/search?q=software+developer&l=Chicago%2C+IL"
@@ -396,10 +333,19 @@ def main():
     mleng_url = "https://www.simplyhired.com/search?q=machine+learning+engineer&l=Chicago%2C+IL"
     web_url = "https://www.simplyhired.com/search?q=web+developer&l=Chicago%2C+IL"
 
-    url_list = [sw_url, ds_url, da_url, dvop_url, mleng_url, cloud_url, web_url, dteng_url]
+    url_list = [
+        ("software developer", "Chicago, IL", sw_url),
+        ("data science", "Chicago, IL", ds_url),
+        ("data analyst", "Chicago, IL", da_url),
+        ("devops", "Chicago, IL", dvop_url),
+        ("machine learning engineer", "Chicago, IL", mleng_url),
+        ("cloud computing", "Chicago, IL", cloud_url),
+        ("web developer", "Chicago, IL", web_url),
+        ("data engineer", "Chicago, IL", dteng_url),
+    ]
 
     # Visiting target website
-    for url in url_list:
+    for search_term, search_location, url in url_list:
         driver.get(url)
 
         # Our action loop!
@@ -410,17 +356,8 @@ def main():
         current_page = 1
         while current_page <= pages_to_search:
             # Scrape data from the current page
-            scrape_page(driver, job_dict)
-
-            # Create a DataFrame for the current page's data
-            listings_frame = pd.DataFrame(job_dict)
-
-            if not os.path.isfile(output_file):
-                listings_frame.to_csv(output_file, index=False)
-                print(f"[Saved] Created new file: {output_file}")
-            else:
-                listings_frame.to_csv(output_file, mode='a', header=False, index=False)
-                print(f"[Saved] Appended to file: {output_file}")
+            page_rows = scrape_page(driver, search_term, search_location, url)
+            append_rows(page_rows, output_file)
 
             # Go to the next page
             next_page(driver)
