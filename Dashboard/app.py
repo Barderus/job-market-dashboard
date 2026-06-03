@@ -1,19 +1,13 @@
-import sys
-import os
-
-# Dynamically add the Scripts folder to the path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'Scripts')))
-
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from wordcloud import WordCloud
 
-from load_data import load_and_prepare_data, extract_salary_range, normalize_salary
-from tech_skills_analysis import extract_tech_skills, categorize_skills
-from soft_skills_analysis import count_soft_skills
-from action_verbs import extract_action_verbs
+from Scripts.load_data import load_and_prepare_data, extract_salary_range, normalize_salary
+from Scripts.tech_skills_analysis import extract_tech_skills, categorize_skills
+from Scripts.soft_skills_analysis import count_soft_skills
+from Scripts.action_verbs import extract_action_verbs
 
 
 st.set_page_config(page_title="Job Market Dashboard", layout="wide")
