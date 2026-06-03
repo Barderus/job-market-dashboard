@@ -1,5 +1,7 @@
 #THIS TAKES A REALLY LONG TIME TO FETCH THE DATA SO ONLY RUN IT IF YOU ARE DETERMINED
 
+import os
+import datetime
 from selenium import webdriver
 from selenium.common import NoSuchElementException
 from selenium.common import StaleElementReferenceException
@@ -10,13 +12,10 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from pathlib import Path
-import pandas as pd
-import datetime
-import time
-import os
 
 ignored_exceptions = (NoSuchElementException, StaleElementReferenceException)
+
+from Workflow.scraper_utils import append_rows, make_job_row
 
 sw_url = 'https://www.glassdoor.com/Job/chicago-il-us-software-developer-jobs-SRCH_IL.0,13_IC1128808_KO14,32.htm'
 da_url = 'https://www.glassdoor.com/Job/chicago-il-data-analyst-jobs-SRCH_IL.0,10_IC1128808_KO11,23.htm'
@@ -27,20 +26,19 @@ dvop_url = 'https://www.glassdoor.com/Job/chicago-il-dev-ops-engineer-jobs-SRCH_
 mleng_url = 'https://www.glassdoor.com/Job/chicago-il-machine-learning-engineer-jobs-SRCH_IL.0,10_IC1128808_KO11,36.htm'
 web_url = 'https://www.glassdoor.com/Job/chicago-il-web-developer-jobs-SRCH_IL.0,10_IC1128808_KO11,24.htm'
 
-url_list = [sw_url, ds_url, da_url, dvop_url, mleng_url, cloud_url, web_url, dteng_url]
+url_list = [
+    ("software developer", "Chicago, IL", sw_url),
+    ("data scientist", "Chicago, IL", ds_url),
+    ("data analyst", "Chicago, IL", da_url),
+    ("dev ops engineer", "Chicago, IL", dvop_url),
+    ("machine learning engineer", "Chicago, IL", mleng_url),
+    ("cloud engineer", "Chicago, IL", cloud_url),
+    ("web developer", "Chicago, IL", web_url),
+    ("data engineer", "Chicago, IL", dteng_url),
+]
 
-def save_progress(data_dict, filename):
-    """Save current scraping progress to a CSV file."""
-    df = pd.DataFrame(data_dict)
-    if not os.path.isfile(filename):
-        df.to_csv(filename, index=False)
-        print(f"[Saved] Created {filename}")
-    else:
-        df.to_csv(filename, mode='a', header=False, index=False)
-        print(f"[Saved] Appended to {filename}")
-
-
-def scrape_page(driver,dic):
+def scrape_page(driver, seen_ids, search_term, search_location, source_url):
+    page_rows = []
 
     job_column = WebDriverWait(driver, 3).until(EC.visibility_of_element_located((By.CSS_SELECTOR, 'ul[aria-label="Jobs List"]')))
     jobs = WebDriverWait(job_column, 3).until(EC.presence_of_all_elements_located((By.TAG_NAME, 'li')))
@@ -50,8 +48,8 @@ def scrape_page(driver,dic):
 
     for j in jobs:
         #print(j.text)
-        id = j.id
-        if id not in dic['ID']:
+        job_id = j.id
+        if job_id not in seen_ids:
             try:
                 title = j.find_element(By.CSS_SELECTOR, '*[class*="jobTitle"]').text.strip()
                 #print(title)
@@ -69,21 +67,29 @@ def scrape_page(driver,dic):
                 title = -1
         
             if title != -1:
-                dic["Title"].append(title)
-                dic["Location"].append(location)
-                dic["Salary"].append(salary)
-                dic["Description"].append(description)
-                dic["ID"].append(id)
+                seen_ids.add(job_id)
+                page_rows.append(
+                    make_job_row(
+                        source="glassdoor",
+                        search_term=search_term,
+                        search_location=search_location,
+                        source_url=source_url,
+                        title=title,
+                        job_location=location,
+                        salary=salary,
+                        description=description,
+                    )
+                )
                 added += 1
     
     print(f'{added} jobs appended out of {len(jobs)} found')
-    return added
+    return page_rows
 
 def main():
-    dics = {"Title": [], "Location": [], "Salary": [], "Description": [], "ID": []}
-    fileNm = Path(f'GlassdoorPull-{datetime.date.today()}.csv')
+    seen_ids = set()
+    fileNm = f'GlassdoorPull-{datetime.date.today()}.csv'
 
-    if fileNm.exists():
+    if os.path.exists(fileNm):
         write = input(f'{fileNm} already exists. Overwrite? (Y/N): ')
     else:
         write = 'y'
@@ -93,10 +99,11 @@ def main():
     driver.implicitly_wait(1)
 
     try:
-        for url in url_list:
+        for search_term, search_location, url in url_list:
             driver.get(url)
-            jobListing = scrape_page(driver, dics)
-            save_progress(dics, fileNm)  # Save after initial page
+            page_rows = scrape_page(driver, seen_ids, search_term, search_location, url)
+            append_rows(page_rows, fileNm)
+            jobListing = len(page_rows)
 
             cont = 'y'
             while jobListing > 0 and cont.lower().startswith('y'):
@@ -118,13 +125,13 @@ def main():
                     print('no popup')
 
                 driver.implicitly_wait(1)
-                jobListing = scrape_page(driver, dics)
-                save_progress(dics, fileNm)  # Save after every scrape
+                page_rows = scrape_page(driver, seen_ids, search_term, search_location, url)
+                append_rows(page_rows, fileNm)
+                jobListing = len(page_rows)
 
     except Exception as e:
         print(f"[CRASH] Something went wrong: {e}")
         print("Saving progress before exiting...")
-        save_progress(dics, fileNm)
 
     finally:
         driver.quit()
