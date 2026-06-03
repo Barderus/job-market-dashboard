@@ -1,57 +1,21 @@
-import random
-
-import pandas as pd
-from selenium import webdriver
 from selenium.common import TimeoutException, StaleElementReferenceException
 from selenium.webdriver import ActionChains
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium_stealth import stealth
-from webdriver_manager.chrome import ChromeDriverManager
-from datetime import datetime
-
-# Generate a unique filename
-timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-output_file = f"zip-recruiter-pull-{timestamp}.csv"
+from Workflow.scraper_utils import append_rows, build_stealth_driver, make_job_row, make_output_file
 
 
-# List of user agents string
-user_agents = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.2420.81",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14.4; rv:124.0) Gecko/20100101 Firefox/124.0",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0",
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (X11; Linux i686; rv:124.0) Gecko/20100101 Firefox/124.0"]
+output_file = make_output_file("zip-recruiter-pull")
 
 base_url = "https://www.ziprecruiter.com/jobs-search?search="
 
-def save_progress(data_dict, filename):
-    df = pd.DataFrame(data_dict)
-    if not df.empty:
-        if not os.path.exists(filename):
-            df.to_csv(filename, index=False)
-            print(f"[Saved] Created new file {filename}")
-        else:
-            df.to_csv(filename, mode='a', header=False, index=False)
-            print(f"[Saved] Appended data to {filename}")
-    else:
-        print("[Warning] No data to save.")
-
-
-
-def scrape_page(driver, job_dict, url):
+def scrape_page(driver, url, search_term, search_location):
     # Get the current window handle before any click
     main_window_handle = driver.current_window_handle
 
     job_cards_selector = '*[class*="job_result_two_pane"]'
+    page_rows = []
     try:
         # Locate job cards initially
         job_cards = driver.find_elements(By.CSS_SELECTOR, job_cards_selector)
@@ -90,7 +54,7 @@ def scrape_page(driver, job_dict, url):
             WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, "div[data-testid='right-pane']")))
             job_title = driver.find_element(By.CSS_SELECTOR,
-                                            "h1.font-bold.text-primary.text-header-md.md\:text-header-md-tablet").text
+                                            r"h1.font-bold.text-primary.text-header-md.md\:text-header-md-tablet").text
             job_location = driver.find_element(By.CSS_SELECTOR,
                                                "div.mb-24 p.text-primary.normal-case.text-body-md").text
             company_name = driver.find_element(By.CSS_SELECTOR,
@@ -114,12 +78,20 @@ def scrape_page(driver, job_dict, url):
                     job_type = text
 
             # If both information exists, add them to the job_dict
-            job_dict["title"].append(job_title)
-            job_dict["company_name"].append(company_name)
-            job_dict["job_location"].append(job_location)
-            job_dict["job_salary"].append(job_salary)
-            job_dict["job_type"].append(job_type)
-            job_dict["job_description"].append(job_details)
+            page_rows.append(
+                make_job_row(
+                    source="ziprecruiter",
+                    search_term=search_term,
+                    search_location=search_location,
+                    source_url=url,
+                    title=job_title,
+                    company_name=company_name,
+                    job_location=job_location,
+                    job_type=job_type,
+                    salary=job_salary,
+                    description=job_details,
+                )
+            )
 
             i += 1  # Increment the index only if the click and extraction were successful
 
@@ -128,6 +100,8 @@ def scrape_page(driver, job_dict, url):
         except Exception as e:
             print(f"An unexpected error occurred on job card {i + 1}: {e}")
             i += 1  # Skip to the next job card if an error occurs
+
+    return page_rows
 
 
 def next_page(driver):
@@ -144,56 +118,21 @@ def next_page(driver):
 
 
 def main():
-    import os
-    from pathlib import Path
-
     url_list = [
-        "https://www.ziprecruiter.com/jobs-search?search=software+engineer&location=Chicago%2C+IL&lvk=JG_74EGAdtycohHKniD2eg.--NacsUqfMF",
-        "https://www.ziprecruiter.com/jobs-search?search=data+scientist&location=Chicago%2C+IL&lvk=DBml3W3I7MdIbFS0oJWb1g.--Nfet94gmo",
-        "https://www.ziprecruiter.com/jobs-search?search=data+analyst&location=Chicago%2C+IL&lvk=aJd0EasHdgwWMwd02uxqQw.--NfetAEI3k",
-        "https://www.ziprecruiter.com/jobs-search?search=dev+ops&location=Chicago%2C+IL&lvk=8Fn5DTVbgDPdaWpheHFmCQ.--Nfe4Q0T8g",
-        "https://www.ziprecruiter.com/jobs-search?search=machine+learning+engineer&location=Chicago%2C+IL&lvk=MOx4LHDzHjJ-JTykfwkowA.--NfetAqkTB",
-        "https://www.ziprecruiter.com/jobs-search?search=cloud+engineer&location=Chicago%2C+IL&lvk=8Fn5DTVbgDPdaWpheHFmCQ.--Nfe4Q0T8g",
-        "https://www.ziprecruiter.com/jobs-search?search=web+developer&location=Chicago%2C+IL&lvk=vGvBRpEKvrSltPTb5j8_iQ.--NffGxO2Yg",
-        "https://www.ziprecruiter.com/jobs-search?search=data+engineer&location=Chicago%2C+IL&lvk=3kz6loGNfWcrdiKNC_NEBw.--Nfeszg53B"
+        ("software engineer", "Chicago, IL", "https://www.ziprecruiter.com/jobs-search?search=software+engineer&location=Chicago%2C+IL&lvk=JG_74EGAdtycohHKniD2eg.--NacsUqfMF"),
+        ("data scientist", "Chicago, IL", "https://www.ziprecruiter.com/jobs-search?search=data+scientist&location=Chicago%2C+IL&lvk=DBml3W3I7MdIbFS0oJWb1g.--Nfet94gmo"),
+        ("data analyst", "Chicago, IL", "https://www.ziprecruiter.com/jobs-search?search=data+analyst&location=Chicago%2C+IL&lvk=aJd0EasHdgwWMwd02uxqQw.--NfetAEI3k"),
+        ("dev ops", "Chicago, IL", "https://www.ziprecruiter.com/jobs-search?search=dev+ops&location=Chicago%2C+IL&lvk=8Fn5DTVbgDPdaWpheHFmCQ.--Nfe4Q0T8g"),
+        ("machine learning engineer", "Chicago, IL", "https://www.ziprecruiter.com/jobs-search?search=machine+learning+engineer&location=Chicago%2C+IL&lvk=MOx4LHDzHjJ-JTykfwkowA.--NfetAqkTB"),
+        ("cloud engineer", "Chicago, IL", "https://www.ziprecruiter.com/jobs-search?search=cloud+engineer&location=Chicago%2C+IL&lvk=8Fn5DTVbgDPdaWpheHFmCQ.--Nfe4Q0T8g"),
+        ("web developer", "Chicago, IL", "https://www.ziprecruiter.com/jobs-search?search=web+developer&location=Chicago%2C+IL&lvk=vGvBRpEKvrSltPTb5j8_iQ.--NffGxO2Yg"),
+        ("data engineer", "Chicago, IL", "https://www.ziprecruiter.com/jobs-search?search=data+engineer&location=Chicago%2C+IL&lvk=3kz6loGNfWcrdiKNC_NEBw.--Nfeszg53B"),
     ]
 
-    chrome_options = Options()
-    chrome_options.add_experimental_option("detach", True)
-    chrome_options.add_argument("start-maximized")
-    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    chrome_options.add_experimental_option('useAutomationExtension', False)
-    chrome_options.add_argument('--disable-blink-features=AutomationControlled')
-    chrome_options.add_argument('--disable-popup-blocking')
-    chrome_options.add_argument('--start-maximized')
-    chrome_options.add_argument('--disable-extensions')
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--disable-dev-shm-usage')
-    chrome_options.add_argument(f"--user-agent={random.choice(user_agents)}")
-
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
-
-    driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-    stealth(driver,
-            languages=["en-US", "en"],
-            vendor="Google Inc.",
-            platform="Win32",
-            webgl_vendor="Intel Inc.",
-            renderer="Intel Iris OpenGL Engine",
-            fix_hairline=True,
-            )
-
-    job_dict = {
-        "title": [],
-        "job_location": [],
-        "company_name": [],
-        "job_type": [],
-        "job_description": [],
-        "job_salary": [],
-    }
+    driver = build_stealth_driver(detach=True)
 
     try:
-        for url in url_list:
+        for search_term, search_location, url in url_list:
             driver.get(url)
             element = WebDriverWait(driver, 20).until(
                 EC.visibility_of_element_located((By.CLASS_NAME, 'content'))
@@ -203,8 +142,8 @@ def main():
             page = 0
             while True:
                 print(f"\n[Info] Scraping page {page + 1} from: {url}")
-                scrape_page(driver, job_dict, url)
-                save_progress(job_dict, output_file)
+                page_rows = scrape_page(driver, url, search_term, search_location)
+                append_rows(page_rows, output_file)
 
                 if not next_page(driver):
                     print("No more pages to scrape for this job role.")
@@ -216,7 +155,6 @@ def main():
     except Exception as e:
         print(f"[CRASH] Error occurred: {e}")
         print("[Info] Saving progress before exiting...")
-        save_progress(job_dict, output_file)
 
     finally:
         driver.quit()
